@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 // app configuration
-app.set('port', (process.env.PORT || 3000));
+app.set('port', (process.env.PORT || 5000));
 
 // setup our express application
 app.use(morgan('dev')); // log every request to the console.
