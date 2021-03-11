@@ -16,6 +16,43 @@ module.exports = function(app, chalk) {
   app.post('/webhook', function(req, res) {
     //checking for page subscription.
     if (req.body.object === 'page') {
+
+      request({
+            url: "https://graph.facebook.com/v2.6/me/messages",
+            qs: {
+               access_token: process.env.PAGE_ACCESS_TOKEN
+            },
+            method: "POST",
+            json: {
+               ice_breakers:[
+                  {
+                     question: "Where are you located?",
+                     payload: "LOCATION_POSTBACK_PAYLOAD"
+                  },
+                  {
+                     question: "What are your hours?",
+                     payload: "HOURS_POSTBACK_PAYLOAD"
+                  },
+                  {
+                     question: "What are your hours?",
+                     payload: "HOURS_POSTBACK_PAYLOAD"
+                  },
+                  {
+                     question: "Can you tell me more about your business?",
+                     payload: "MORE_POSTBACK_PAYLOAD"
+                  },
+                  {
+                     question: "What services do you offer?",
+                     payload: "SERVICES_POSTBACK_PAYLOAD"
+                  }
+               ]
+            }
+         }, function(error, response) {
+            if (error) {
+               console.log("Error sending message: " + response.error);
+            }
+         });
+
        /* Iterate over each entry, there can be multiple entries 
        if callbacks are batched. */
        req.body.entry.forEach(function(entry) {
