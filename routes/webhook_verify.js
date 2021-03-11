@@ -14,6 +14,10 @@ module.exports = function(app, chalk) {
       json: {
          ice_breakers:[
             {
+               question: "I want in!",
+               payload: "WELCOME"
+            },
+            {
                question: "Where are you located?",
                payload: "LOCATION_POSTBACK_PAYLOAD"
             },
