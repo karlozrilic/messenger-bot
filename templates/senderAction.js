@@ -1,6 +1,15 @@
 const request = require('request');
 
-module.exports = function senderAction(recipientId){
+module.exports = function senderAction(recipientId, messageText) {
+
+    let odg = "alooooooooo"
+
+    if (messageText.toLowerCase == "hi") {
+        odg = "Helooooo!";
+    } else {
+        odg = "I don't understand";
+    }
+
     request({
         url: "https://graph.facebook.com/v2.6/me/messages",
         qs: {
@@ -10,7 +19,7 @@ module.exports = function senderAction(recipientId){
         json: {
             recipient: {id: recipientId},
             message: {
-                text: "aloooooo"
+                text: odg
             }
         }
     }, function(error, response, body) {

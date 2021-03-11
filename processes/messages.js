@@ -38,7 +38,7 @@ module.exports = function processMessage(event) {
                 sendGenericTemplate(senderID, body);
             });
             */
-            senderAction(senderID);
+            senderAction(senderID, text);
 
         }
     }
