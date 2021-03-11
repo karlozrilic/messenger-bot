@@ -22,7 +22,6 @@ module.exports = function(app, chalk) {
        req.body.entry.forEach(function(entry) {
        // Iterate over each messaging event
           entry.messaging.forEach(function(event) {
-          console.log(event);
           if (event.postback){
              processPostback(event);
           } else if (event.message){
