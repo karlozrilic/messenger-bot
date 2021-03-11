@@ -4,9 +4,6 @@ module.exports = function senderAction(recipientId, messageText) {
 
     let odg = "alooooooooo"
 
-    console.log("MESSAGE TEXT:");
-    console.log(messageText);
-
     let message = {}
 
     messageText = messageText.toLowerCase();

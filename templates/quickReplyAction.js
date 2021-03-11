@@ -2,7 +2,6 @@ const request = require('request');
 const messages = require('../processes/messages');
 
 module.exports = function quickReplyAction(recipientId, payload) {
-    console.log(payload);
 
     let message = {};
     
