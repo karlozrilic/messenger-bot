@@ -7,8 +7,32 @@ module.exports = function senderAction(recipientId, messageText) {
     console.log("MESSAGE TEXT:");
     console.log(messageText);
 
-    if (messageText.toLowerCase() == "hi") {
-        odg = "Helooooo!";
+    let message = {}
+
+    messageText = messageText.toLowerCase();
+
+    if (messageText == "hi") {
+        message = {
+            text: odg
+        };
+    } else if (messageText == "color") {
+        message = {
+            text: "Pick a color:",
+            quick_replies: [
+                {
+                    content_type: "text",
+                    title: "Red",
+                    payload: "its-red",
+                    image_url: "http://example.com/img/red.png"
+                }, 
+                {
+                    content_type: "text",
+                    title: "Green",
+                    payload: "its-green",
+                    image_url: "http://example.com/img/red.png"
+                }
+            ]
+        }
     } else {
         odg = "I don't understand";
     }
@@ -21,9 +45,7 @@ module.exports = function senderAction(recipientId, messageText) {
         method: "POST",
         json: {
             recipient: {id: recipientId},
-            message: {
-                text: odg
-            }
+            message: message
         }
     }, function(error, response, body) {
         if (error) {
