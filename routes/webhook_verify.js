@@ -1,5 +1,6 @@
 const processPostback = require('../processes/postback');
 const processMessage = require('../processes/messages');
+const processQuickReply = require('../processes/quickReply');
 
 module.exports = function(app, chalk) {
   app.get('/webhook', function(req, res) {
@@ -25,7 +26,11 @@ module.exports = function(app, chalk) {
           if (event.postback){
              processPostback(event);
           } else if (event.message){
-             processMessage(event);
+             if (event.message.quick_reply) {
+               processQuickReply(event);
+             } else {
+               processMessage(event);
+             }
           }
       });
     });
