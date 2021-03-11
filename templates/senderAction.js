@@ -9,7 +9,9 @@ module.exports = function senderAction(recipientId){
         method: "POST",
         json: {
             recipient: {id: recipientId},
-            "sender_action":"typing_on"
+            message: {
+                text: "aloooooo"
+            }
         }
     }, function(error, response, body) {
         if (error) {
