@@ -39,5 +39,5 @@ module.exports = function senderAction(recipientId, messageText) {
         };
     }
 
-    sendMessage(message);
+    sendMessage(recipientId, message);
 }
