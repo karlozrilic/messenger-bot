@@ -23,7 +23,7 @@ module.exports = function processMessage(event) {
                 if (error) {
                     console.log("Error sending message: " + response.error);
                 }
-                console.log("Odg :" . response);
+                console.log("Odg :" + response);
             });
             senderAction(senderID, text);
         }
