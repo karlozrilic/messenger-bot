@@ -16,7 +16,8 @@ module.exports = function(app, chalk) {
   app.post('/webhook', function(req, res) {
     //checking for page subscription.
     if (req.body.object === 'page'){
-       
+       console.log("BODY: ");
+       console.log(req.body);
        /* Iterate over each entry, there can be multiple entries 
        if callbacks are batched. */
        req.body.entry.forEach(function(entry) {
