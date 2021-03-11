@@ -38,6 +38,6 @@ module.exports = function senderAction(recipientId, messageText) {
             text: odg
         };
     }
-
+    
     sendMessage(recipientId, message);
 }
