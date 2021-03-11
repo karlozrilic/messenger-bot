@@ -39,7 +39,5 @@ module.exports = function senderAction(recipientId, messageText) {
         };
     }
 
-    sendMessage(recipientId, message).then( () => {
-        sendMessage(recipientId, {text: "👍🏼"})
-    });
+    sendMessage(recipientId, message);
 }
