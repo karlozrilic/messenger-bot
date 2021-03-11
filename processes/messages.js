@@ -16,7 +16,7 @@ module.exports = function processMessage(event) {
                 },
                 method: "POST",
                 json: {
-                    recipient: {id: recipientId},
+                    recipient: {id: senderID},
                     sender_action: "typing_on"
                 }
             }, function(error, response) {
