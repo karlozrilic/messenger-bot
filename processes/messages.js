@@ -39,8 +39,6 @@ module.exports = function processMessage(event) {
             });
             */
             senderAction(senderID);
-            // after the response is recieved we will send the details in a Generic template
-            sendGenericTemplate(senderID, body);
 
         }
     }
