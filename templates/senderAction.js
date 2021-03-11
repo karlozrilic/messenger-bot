@@ -9,6 +9,7 @@ module.exports = function senderAction(recipientId, messageText) {
     messageText = messageText.toLowerCase();
 
     if (messageText == "hi") {
+        odg = "Heloooo!";
         message = {
             text: odg
         };
@@ -32,6 +33,9 @@ module.exports = function senderAction(recipientId, messageText) {
         }
     } else {
         odg = "I don't understand";
+        message = {
+            text: odg
+        };
     }
 
     request({
