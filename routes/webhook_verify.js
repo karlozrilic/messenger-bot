@@ -17,7 +17,7 @@ module.exports = function(app, chalk) {
     //checking for page subscription.
     if (req.body.object === 'page'){
        console.log("BODY: ");
-       console.log(req.body);
+       console.log(req.body.entry.length);
        /* Iterate over each entry, there can be multiple entries 
        if callbacks are batched. */
        req.body.entry.forEach(function(entry) {
