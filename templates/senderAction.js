@@ -21,13 +21,13 @@ module.exports = function senderAction(recipientId, messageText) {
                     content_type: "text",
                     title: "Red",
                     payload: "its-red",
-                    image_url: "http://example.com/img/red.png"
+                    image_url: "https://www.iconsdb.com/icons/preview/red/circle-xxl.png"
                 }, 
                 {
                     content_type: "text",
                     title: "Green",
                     payload: "its-green",
-                    image_url: "http://example.com/img/red.png"
+                    image_url: "https://www.iconsdb.com/icons/preview/green/circle-xxl.png"
                 }
             ]
         }
