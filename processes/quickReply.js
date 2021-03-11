@@ -21,7 +21,7 @@ module.exports = function processQuickReply(event) {
                 if (error) {
                     console.log("Error sending message: " + response.error);
                 }
-                quickReplyAction(senderID, payload);
+                /*quickReplyAction(senderID, payload);*/
             });
         }
     }
