@@ -30,12 +30,17 @@ module.exports = function processMessage(event) {
                 json: true
             };
 
+            /*
             request(options, function (error, response, body) {
                 if (error) throw new Error(error);
                 senderAction(senderID);
                 // after the response is recieved we will send the details in a Generic template
                 sendGenericTemplate(senderID, body);
             });
+            */
+            senderAction(senderID);
+            // after the response is recieved we will send the details in a Generic template
+            sendGenericTemplate(senderID, body);
 
         }
     }
