@@ -47,7 +47,7 @@ module.exports = function senderAction(recipientId, messageText) {
             recipient: {id: recipientId},
             message: message
         }
-    }, function(error, response, body) {
+    }, function(error, response) {
         if (error) {
             console.log("Error sending message: " + response.error);
         }
