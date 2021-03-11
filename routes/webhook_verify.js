@@ -1,3 +1,4 @@
+const request = require('request');
 const processPostback = require('../processes/postback');
 const processMessage = require('../processes/messages');
 const processQuickReply = require('../processes/quickReply');
