@@ -3,9 +3,10 @@ const sendMessage = require('../templates/sendMessage');
 
  module.exports = function processPostback(event) {
      const senderID = event.sender.id;
-     const payload = event.postback.payload;
+     const payload = event?.postback?.payload;
+     const message = event?.message?.text.toLowerCase();
 
-     if (payload === 'WELCOME') {
+     if (payload === 'WELCOME' || message === "i want in!") {
         request({
             url: "https://graph.facebook.com/v2.6/" + senderID,
             qs: {

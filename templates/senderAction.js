@@ -39,7 +39,6 @@ module.exports = function senderAction(recipientId, messageText, event) {
         }
         sendMessage(recipientId, message);
     } else if (messageText == "i want in!") {
-        
         processPostback(event);
     } else {
         odg = "I don't understand";
