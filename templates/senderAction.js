@@ -14,6 +14,7 @@ module.exports = function senderAction(recipientId, messageText, event) {
         message = {
             text: odg
         };
+        sendMessage(recipientId, message);
     } else if (messageText == "color") {
         message = {
             text: "Pick a color:",
@@ -32,6 +33,7 @@ module.exports = function senderAction(recipientId, messageText, event) {
                 }
             ]
         }
+        sendMessage(recipientId, message);
     } else if (messageText == "i want in!") {
         processPostback(event);
     } else {
@@ -39,7 +41,6 @@ module.exports = function senderAction(recipientId, messageText, event) {
         message = {
             text: odg
         };
+        sendMessage(recipientId, message);
     }
-
-    sendMessage(recipientId, message);
 }
