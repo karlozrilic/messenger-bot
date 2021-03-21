@@ -10,6 +10,9 @@ module.exports = function senderAction(recipientId, messageText, event) {
 
     messageText = messageText.toLowerCase();
 
+    console.log("EVENT!!!!!!!")
+    console.log(event);
+
     if (messageText == "hi") {
         odg = "Heloooo!";
         message = {
@@ -68,7 +71,6 @@ module.exports = function senderAction(recipientId, messageText, event) {
                 });
             });
         });
-        console.error(event);
         //processPostback(event);
     } else {
         odg = "I don't understand";
