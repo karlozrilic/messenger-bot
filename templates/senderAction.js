@@ -55,7 +55,7 @@ module.exports = function senderAction(recipientId, messageText, event) {
             }
             let message = greeting + "Welcome to Digital nomads - Zadar. Hope you are doing good today";
             let message2 = "I am here to help you :-)"
-            let message3 = `please type in one of the following commands:\n 
+            let message3 = `please type in one of the following commands:
                             - color
                             - hi`;
             /*senderAction(senderID);*/
