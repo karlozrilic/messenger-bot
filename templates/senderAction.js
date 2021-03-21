@@ -1,7 +1,8 @@
 const request = require('request');
 const sendMessage = require('./sendMessage');
+const processPostback = require('../processes/postback');
 
-module.exports = function senderAction(recipientId, messageText) {
+module.exports = function senderAction(recipientId, messageText, event) {
 
     let odg = "alooooooooo"
 
@@ -33,17 +34,7 @@ module.exports = function senderAction(recipientId, messageText) {
             ]
         }
     } else if (messageText == "i want in!") {
-        let message = greeting + "Welcome to Healthbot. Hope you are doing good today";
-        let message2 = "I am your nutrition tracker :-)"
-        let message3 = "please type in what you ate like: I ate chicken birayani and 2 chapatis with dal.";
-        /*senderAction(senderID);*/
-        sendMessage(senderID, {text: message}).then(() => {
-            sendMessage(senderID, { text: message2 }).then(() => {
-                sendMessage(senderID, {  text: message3}).then(() => {
-                    sendMessage(senderID, { text: '🎈' });
-                })
-            });
-        });
+        processPostback(event);
         return;
     } else {
         odg = "I don't understand";

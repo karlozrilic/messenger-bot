@@ -7,7 +7,7 @@ module.exports = function processMessage(event) {
         const senderID = event.sender.id;
         if (message.text) {
             let text = message.text;
-            senderAction(senderID, text);
+            senderAction(senderID, text, event);
         }
     }
 }
