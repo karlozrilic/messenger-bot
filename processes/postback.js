@@ -21,8 +21,8 @@ const sendMessage = require('../templates/sendMessage');
             } else {
                 let bodyObject = JSON.parse(body);
                 console.log(bodyObject);
-                name = bodyObject.first_name;
-                greeting = "Hello " + name  + ". ";
+                senderName = bodyObject.first_name;
+                greeting = "Hello " + senderName  + ". ";
             }
             let message = greeting + "Welcome to Digital nomads - Zadar. Hope you are doing good today";
             let message2 = "I am here to help you :-)"
