@@ -1,4 +1,5 @@
 const request = require('request');
+const senderAction = require('../templates/senderAction');
 const sendMessage = require('../templates/sendMessage');
 
  module.exports = function processPostback(event) {
@@ -28,6 +29,7 @@ const sendMessage = require('../templates/sendMessage');
             let message3 = `please type in one of the following commands:
                             - color
                             - hi`;
+            /*senderAction(senderID);*/
             sendMessage(senderID, {text: message}).then(() => {
                 sendMessage(senderID, { text: message2 }).then(() => {
                     sendMessage(senderID, {  text: message3}).then(() => {
