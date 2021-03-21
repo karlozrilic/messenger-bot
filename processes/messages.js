@@ -1,4 +1,3 @@
-const request = require('request');
 const senderAction = require('../templates/senderAction');
 
 module.exports = function processMessage(event) {

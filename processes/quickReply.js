@@ -1,4 +1,3 @@
-const request = require('request');
 const quickReplyAction = require('../templates/quickReplyAction');
 
 module.exports = function processQuickReply(event) {

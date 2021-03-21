@@ -1,4 +1,3 @@
-const request = require('request');
 const sendMessage = require('./sendMessage');
 
 module.exports = function quickReplyAction(recipientId, payload) {
