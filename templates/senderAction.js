@@ -1,4 +1,3 @@
-const request = require('request');
 const sendMessage = require('./sendMessage');
 const processPostback = require('../processes/postback');
 
@@ -35,7 +34,6 @@ module.exports = function senderAction(recipientId, messageText, event) {
         }
     } else if (messageText == "i want in!") {
         processPostback(event);
-        return;
     } else {
         odg = "I don't understand";
         message = {
