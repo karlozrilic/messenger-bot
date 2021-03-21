@@ -1,5 +1,6 @@
 const request = require('request');
 const sendMessage = require('./sendMessage');
+const processPostback = require('../processes/postback');
 
 module.exports = function senderAction(recipientId, messageText, event) {
 
@@ -67,6 +68,8 @@ module.exports = function senderAction(recipientId, messageText, event) {
                 });
             });
         });
+        console.error(event);
+        //processPostback(event);
     } else {
         odg = "I don't understand";
         message = {
