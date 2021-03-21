@@ -24,9 +24,11 @@ const sendMessage = require('../templates/sendMessage');
                 name = bodyObject.first_name;
                 greeting = "Hello " + name  + ". ";
             }
-            let message = greeting + "Welcome to Healthbot. Hope you are doing good today";
-            let message2 = "I am your nutrition tracker :-)"
-            let message3 = "please type in what you ate like: I ate chicken birayani and 2 chapatis with dal.";
+            let message = greeting + "Welcome to Digital nomads - Zadar. Hope you are doing good today";
+            let message2 = "I am here to help you :-)"
+            let message3 = `please type in one of the following commands:\n 
+                            - color
+                            - hi`;
             /*senderAction(senderID);*/
             sendMessage(senderID, {text: message}).then(() => {
                 sendMessage(senderID, { text: message2 }).then(() => {
