@@ -1,4 +1,4 @@
-const sendMessage = require('./sendMessage');
+const sendMessage = require('../messageSender/sendMessage');
 const processPostback = require('../processes/postback');
 
 module.exports = function senderAction(recipientId, messageText, event) {

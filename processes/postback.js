@@ -1,5 +1,5 @@
 const request = require('request');
-const sendMessage = require('../templates/sendMessage');
+const sendMessage = require('../messageSender/sendMessage');
 
  module.exports = function processPostback(event) {
      const senderID = event.sender.id;

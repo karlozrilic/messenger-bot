@@ -1,4 +1,4 @@
-const sendMessage = require('./sendMessage');
+const sendMessage = require('../messageSender/sendMessage');
 
 module.exports = function quickReplyAction(recipientId, payload) {
 
