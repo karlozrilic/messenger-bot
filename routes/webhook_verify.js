@@ -1,7 +1,7 @@
 import request from 'request';
-import { processPostback } from '../processes/postback';
-import { processMessage } from '../processes/messages';
-import { processQuickReply } from '../processes/quickReply';
+import { processPostback } from '../processes/postback.js';
+import { processMessage } from '../processes/messages.js';
+import { processQuickReply } from '../processes/quickReply.js';
 /*
 const request = require('request');
 const processPostback = require('../processes/postback');

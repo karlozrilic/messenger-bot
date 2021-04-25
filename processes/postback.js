@@ -1,5 +1,5 @@
 import request from 'request';
-import { sendMessage } from '../messageSender/sendMessage';
+import { sendMessage } from '../messageSender/sendMessage.js';
 /*
 const request = require('request');
 const sendMessage = require('../messageSender/sendMessage');

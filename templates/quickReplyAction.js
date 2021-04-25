@@ -1,4 +1,4 @@
-import { sendMessage } from '../messageSender/sendMessage';
+import { sendMessage } from '../messageSender/sendMessage.js';
 /*
 const sendMessage = require('../messageSender/sendMessage');
 */

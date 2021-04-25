@@ -1,4 +1,4 @@
-import { senderAction } from '../templates/senderAction';
+import { senderAction } from '../templates/senderAction.js';
 /*
 const senderAction = require('../templates/senderAction');
 */

@@ -1,6 +1,6 @@
-import { sendMessage } from '../messageSender/sendMessage';
-import { processMessage } from '../processes/messages';
-import { processPostback } from '../processes/postback';
+import { sendMessage } from '../messageSender/sendMessage.js';
+import { processMessage } from '../processes/messages.js';
+import { processPostback } from '../processes/postback.js';
 /*
 const sendMessage = require('../messageSender/sendMessage');
 const messages = require('../processes/messages');

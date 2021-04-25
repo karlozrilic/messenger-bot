@@ -1,4 +1,4 @@
-import { quickReplyAction } from '../templates/quickReplyAction';
+import { quickReplyAction } from '../templates/quickReplyAction.js';
 /*
 const quickReplyAction = require('../templates/quickReplyAction');
 */
