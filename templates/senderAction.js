@@ -1,7 +1,7 @@
 import { sendMessage } from '../messageSender/sendMessage.js';
 import { processMessage } from '../processes/messages.js';
 import { processPostback } from '../processes/postback.js';
-import { checkLanguage, setLanguage, clearLanguage } from '../functions/handleLanguage';
+import { checkLanguage, setLanguage, clearLanguage } from '../functions/handleLanguage.js';
 /*
 const sendMessage = require('../messageSender/sendMessage');
 const messages = require('../processes/messages');
