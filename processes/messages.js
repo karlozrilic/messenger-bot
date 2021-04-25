@@ -1,6 +1,6 @@
 const senderAction = require('../templates/senderAction');
 
-module.exports = function processMessage(event) {
+export default function processMessage(event) {
     if (!event.message.is_echo) {
         const message = event.message;
         const senderID = event.sender.id;
@@ -9,4 +9,4 @@ module.exports = function processMessage(event) {
             senderAction(senderID, text, event);
         }
     }
-}
+};
