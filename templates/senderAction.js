@@ -1,5 +1,5 @@
 import { sendMessage } from '../messageSender/sendMessage';
-import { messages } from '../processes/messages';
+import { processMessage } from '../processes/messages';
 import { processPostback } from '../processes/postback';
 /*
 const sendMessage = require('../messageSender/sendMessage');
