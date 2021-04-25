@@ -49,7 +49,7 @@ export const senderAction = (recipientId, messageText, event) => {
         }
         sendMessage(recipientId, message);
     } else if (messageText == "de" || messageText == "es") {
-        setLanguage(userId, messageText);
+        setLanguage(userID, messageText);
         message = {
             text: "Willkommen"
         };

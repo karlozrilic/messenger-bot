@@ -2,10 +2,10 @@ import { LocalStorage } from 'node-localstorage';
 
 const localStorage = new LocalStorage('./scratch'); 
 
-export const checkLanguage = (userId) => {
+export const checkLanguage = (userID) => {
     let response;
-    if (localStorage?.getItem(userId)) {
-        switch (localStorage.getItem(userId)) {
+    if (localStorage?.getItem(userID)) {
+        switch (localStorage.getItem(userID)) {
             case "de":
                 response = "Halloo [de]";
                 break;
@@ -22,8 +22,8 @@ export const checkLanguage = (userId) => {
     return response;
 };
 
-export const setLanguage = (userId, langCode) => {
-    localStorage.setItem(userId, langCode);
+export const setLanguage = (userID, langCode) => {
+    localStorage.setItem(userID, langCode);
 };
 
 export const clearLanguage = () => {
