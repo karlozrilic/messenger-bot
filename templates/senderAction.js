@@ -55,7 +55,7 @@ export const senderAction = (recipientId, messageText, event) => {
         sendMessage(recipientId, message);
     } else if (messageText == "de") {
         localStorage.setItem('Users', {recipientId: "de"});
-        console.log(localStorage.getItem('Users'))
+        console.log("HERE: "+localStorage.getItem('Users'))
         message = {
             text: "Willkommen"
         };
