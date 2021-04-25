@@ -20,7 +20,7 @@ export const senderAction = (recipientId, messageText, event) => {
     messageText = messageText.toLowerCase();
 
     if (messageText == "hi" || messageText == "hello") {
-        if (localStorage.getItem('Language') == "de") {
+        if (localStorage.getItem('Users').recipientId == "de") {
             odg = "Halooo";
         } else {
             odg = "Heloooo!";
@@ -49,7 +49,8 @@ export const senderAction = (recipientId, messageText, event) => {
         }
         sendMessage(recipientId, message);
     } else if (messageText == "de") {
-        localStorage.setItem('Language', 'de');
+        localStorage.setItem('Users', {recipientId: "de"});
+        console.log(localStorage.getItem('Users'))
         message = {
             text: "Willkommen"
         };
@@ -59,7 +60,7 @@ export const senderAction = (recipientId, messageText, event) => {
         message = {
             text: "Local storage cleared"
         };
-        sendMessage(recipientId, message)
+        sendMessage(recipientId, message);
     } else {
         odg = "I don't understand";
         message = {
