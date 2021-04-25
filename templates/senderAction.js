@@ -1,6 +1,7 @@
 import { sendMessage } from '../messageSender/sendMessage.js';
 import { processMessage } from '../processes/messages.js';
 import { processPostback } from '../processes/postback.js';
+import { checkLanguage, setLanguage, clearLanguage } from '../functions/handleLanguage';
 /*
 const sendMessage = require('../messageSender/sendMessage');
 const messages = require('../processes/messages');
@@ -22,11 +23,7 @@ export const senderAction = (recipientId, messageText, event) => {
     let userID = recipientId.toString();
 
     if (messageText == "hi" || messageText == "hello") {
-        if (localStorage?.getItem(userID) == "de") {
-            odg = "Halooo";
-        } else {
-            odg = "Heloooo!";
-        }
+        odg = checkLanguage(userID);
         message = {
             text: odg
         };
@@ -50,14 +47,14 @@ export const senderAction = (recipientId, messageText, event) => {
             ]
         }
         sendMessage(recipientId, message);
-    } else if (messageText == "de") {
-        localStorage.setItem(userID, "de");
+    } else if (messageText == "de" || messageText == "es") {
+        setLanguage(userId, messageText);
         message = {
             text: "Willkommen"
         };
         sendMessage(recipientId, message);
     } else if (messageText == "clear") {
-        localStorage.clear();
+        clearLanguage();
         message = {
             text: "Local storage cleared"
         };
