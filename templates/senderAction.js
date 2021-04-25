@@ -1,5 +1,9 @@
 const sendMessage = require('../messageSender/sendMessage');
+const messages = require('../processes/messages');
 const processPostback = require('../processes/postback');
+import { LocalStorage } from 'node-localstorage';
+
+const localStorage = new LocalStorage('./scratch'); 
 
 module.exports = function senderAction(recipientId, messageText, event) {
 
@@ -9,8 +13,12 @@ module.exports = function senderAction(recipientId, messageText, event) {
 
     messageText = messageText.toLowerCase();
 
-    if (messageText == "hi") {
-        odg = "Heloooo!";
+    if (messageText == "hi" || messageText == "hello") {
+        if (localStorage.getItem('Language') == "de") {
+            odg = "Halooo";
+        } else {
+            odg = "Heloooo!";
+        }
         message = {
             text: odg
         };
@@ -36,6 +44,12 @@ module.exports = function senderAction(recipientId, messageText, event) {
         sendMessage(recipientId, message);
     } else if (messageText == "i want in!") {
         processPostback(event);
+    } else if (messageText == "de") {
+        localStorage.setItem('Language', 'de');
+        message = {
+            text: "Willkommen"
+        };
+        sendMessage(recipientId, message);
     } else {
         odg = "I don't understand";
         message = {
