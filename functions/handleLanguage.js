@@ -22,8 +22,25 @@ export const checkLanguage = (userID) => {
     return response;
 };
 
-export const setLanguage = (userID, langCode) => {
+export const changeLanguage = (userID, langCode) => {
     localStorage.setItem(userID, langCode);
+    return makeWelcomeResponse(langCode);
+};
+
+const makeWelcomeResponse = (langCode) => {
+    let response;
+    switch(langCode) {
+        case "de":
+            response = "Willkommen";
+            break;
+        case "es":
+            response = "La bienvenida";
+            break;
+        default:
+            response = "Welcome";
+            break;
+    }
+    return response;
 };
 
 export const clearLanguage = () => {

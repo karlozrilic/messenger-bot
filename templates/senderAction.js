@@ -1,7 +1,7 @@
 import { sendMessage } from '../messageSender/sendMessage.js';
 import { processMessage } from '../processes/messages.js';
 import { processPostback } from '../processes/postback.js';
-import { checkLanguage, setLanguage, clearLanguage } from '../functions/handleLanguage.js';
+import { checkLanguage, changeLanguage, clearLanguage } from '../functions/handleLanguage.js';
 /*
 const sendMessage = require('../messageSender/sendMessage');
 const messages = require('../processes/messages');
@@ -49,9 +49,9 @@ export const senderAction = (recipientId, messageText, event) => {
         }
         sendMessage(recipientId, message);
     } else if (messageText == "de" || messageText == "es") {
-        setLanguage(userID, messageText);
+        let response = changeLanguage(userID, messageText);
         message = {
-            text: "Willkommen"
+            text: response
         };
         sendMessage(recipientId, message);
     } else if (messageText == "clear") {
