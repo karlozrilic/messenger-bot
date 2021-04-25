@@ -48,7 +48,6 @@ module.exports = function(app, chalk) {
 	});
   
 	app.post('/webhook', function(req, res) {
-		console.log(req.nlp);
 		//checking for page subscription.
 		if (req.body.object === 'page') {
 			/* Iterate over each entry, there can be multiple entries 
@@ -56,7 +55,7 @@ module.exports = function(app, chalk) {
 			req.body.entry.forEach(function(entry) {
 			// Iterate over each messaging event
 				entry.messaging.forEach(function(event) {
-					//console.log(event)
+					console.log(event.nlp)
 					if (event.postback){
 						processPostback(event);
 					} else if (event.message){
