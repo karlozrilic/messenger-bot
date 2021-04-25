@@ -48,6 +48,7 @@ module.exports = function(app, chalk) {
 	});
   
 	app.post('/webhook', function(req, res) {
+		console.log(req.nlp);
 		//checking for page subscription.
 		if (req.body.object === 'page') {
 			/* Iterate over each entry, there can be multiple entries 

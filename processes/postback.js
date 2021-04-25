@@ -6,8 +6,6 @@ const sendMessage = require('../messageSender/sendMessage');
      const payload = event?.postback?.payload;
      const message = event?.message?.text.toLowerCase();
 
-    console.log(event);
-
      if (payload === 'WELCOME') {
         request({
             url: "https://graph.facebook.com/v2.6/" + senderID,
