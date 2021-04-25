@@ -55,10 +55,11 @@ module.exports = function(app, chalk) {
 			req.body.entry.forEach(function(entry) {
 			// Iterate over each messaging event
 				entry.messaging.forEach(function(event) {
-					console.log(event.nlp)
+					//console.log(event)
 					if (event.postback){
 						processPostback(event);
 					} else if (event.message){
+						console.log(event.message.nlp);
 						if (event.message.quick_reply) {
 							processQuickReply(event);
 						} else {
