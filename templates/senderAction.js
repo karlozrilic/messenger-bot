@@ -1,8 +1,13 @@
+import { sendMessage } from '../messageSender/sendMessage';
+import { messages } from '../processes/messages';
+import { processPostback } from '../processes/postback';
+/*
 const sendMessage = require('../messageSender/sendMessage');
 const messages = require('../processes/messages');
 const processPostback = require('../processes/postback');
+*/
 
-module.exports = function senderAction(recipientId, messageText, event) {
+export const senderAction = (recipientId, messageText, event) => {
 
     import { LocalStorage } from 'node-localstorage';
 

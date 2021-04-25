@@ -1,6 +1,9 @@
+import { senderAction } from '../templates/senderAction';
+/*
 const senderAction = require('../templates/senderAction');
+*/
 
-export default function processMessage(event) {
+export const processMessage = (event) => {
     if (!event.message.is_echo) {
         const message = event.message;
         const senderID = event.sender.id;

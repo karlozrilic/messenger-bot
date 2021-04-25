@@ -1,6 +1,9 @@
+import { quickReplyAction } from '../templates/quickReplyAction';
+/*
 const quickReplyAction = require('../templates/quickReplyAction');
+*/
 
-module.exports = function processQuickReply(event) {
+export const processQuickReply = (event) => {
     if (!event.message.is_echo) {
         const message = event.message;
         const senderID = event.sender.id;

@@ -1,6 +1,9 @@
+import request from 'request';
+/*
 const request = require('request');
+*/
 
-module.exports = function sendMessage(recipientId, message){
+export const sendMessage = (recipientId, message) => {
     return new Promise(function(resolve, reject) {
         request({
             url: "https://graph.facebook.com/v2.6/me/messages",

@@ -2,7 +2,7 @@ import express from 'express';
 import morgan from 'morgan';
 import bodyParser from 'body-parser';
 
-import { verifyWebhook } from './routes/webhook_verify.js';
+import { verifyWebhook } from './routes/webhook_verify';
 /*
 const express = require('express')
 const morgan = require('morgan');

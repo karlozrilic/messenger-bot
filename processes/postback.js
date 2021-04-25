@@ -1,7 +1,11 @@
+import request from 'request';
+import { sendMessage } from '../messageSender/sendMessage';
+/*
 const request = require('request');
 const sendMessage = require('../messageSender/sendMessage');
+*/
 
- module.exports = function processPostback(event) {
+export const processPostback = (event) => {
      const senderID = event.sender.id;
      const payload = event?.postback?.payload;
      const message = event?.message?.text.toLowerCase();

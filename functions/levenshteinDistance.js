@@ -1,4 +1,4 @@
-const levenshteinDistance = (string1 = '', string2 = '') => {
+export const levenshteinDistance = (string1 = '', string2 = '') => {
     const track = Array(string2.length + 1).fill(null).map(() => Array(string1.length + 1).fill(null));
 
     for (let i = 0; i <= string1.length; i++) {
@@ -21,6 +21,4 @@ const levenshteinDistance = (string1 = '', string2 = '') => {
     }
 
     return track[string2.length][string1.length];
-}
-
-module.exports = levenshteinDistance;
+};

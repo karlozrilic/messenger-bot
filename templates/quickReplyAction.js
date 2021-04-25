@@ -1,6 +1,9 @@
+import { sendMessage } from '../messageSender/sendMessage';
+/*
 const sendMessage = require('../messageSender/sendMessage');
+*/
 
-module.exports = function quickReplyAction(recipientId, payload) {
+export const quickReplyAction = (recipientId, payload) => {
 
     let message = {};
     

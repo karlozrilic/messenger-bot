@@ -1,9 +1,13 @@
-
+import request from 'request';
+import { processPostback } from '../processes/postback';
+import { processMessage } from '../processes/messages';
+import { processQuickReply } from '../processes/quickReply';
+/*
 const request = require('request');
 const processPostback = require('../processes/postback');
 const processMessage = require('../processes/messages');
 const processQuickReply = require('../processes/quickReply');
-
+*/
 
 export const verifyWebhook = (app, chalk) => {
 
