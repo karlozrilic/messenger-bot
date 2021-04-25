@@ -9,6 +9,7 @@ export const processPostback = (event) => {
      const senderID = event.sender.id;
      const payload = event?.postback?.payload;
      const message = event?.message?.text.toLowerCase();
+     let senderName;
 
      if (payload === 'WELCOME') {
         request({
