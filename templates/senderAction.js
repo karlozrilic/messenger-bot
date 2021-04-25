@@ -3,9 +3,9 @@ const processPostback = require('../processes/postback');
 
 module.exports = function senderAction(recipientId, messageText, event) {
 
-    let odg = "alooooooooo"
+    let odg;
 
-    let message = {}
+    let message = {};
 
     messageText = messageText.toLowerCase();
 
