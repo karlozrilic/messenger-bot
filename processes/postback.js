@@ -19,14 +19,13 @@ export const processPostback = (event) => {
             },
             method: "GET"
         }, function(error, response, body) {
-            let senderName;
             let greeting = '';
             if (error) {
                 console.error("Error getting user name: " + error);
             } else {
                 let bodyObject = JSON.parse(body);
                 console.log(bodyObject);
-                senderName = bodyObject.first_name;
+                let senderName = bodyObject.first_name;
                 greeting = "Hello " + senderName  + ". ";
             }
             let message = greeting + "Welcome to Digital nomads - Zadar. Hope you are doing good today";
