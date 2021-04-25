@@ -49,13 +49,14 @@ module.exports = function(app, chalk) {
   
 	app.post('/webhook', function(req, res) {
 		//checking for page subscription.
+		console.log(req)
 		if (req.body.object === 'page') {
 			/* Iterate over each entry, there can be multiple entries 
 			if callbacks are batched. */
 			req.body.entry.forEach(function(entry) {
 			// Iterate over each messaging event
 					entry.messaging.forEach(function(event) {
-					console.log(event)
+					//console.log(event)
 					if (event.postback){
 						processPostback(event);
 					} else if (event.message){
