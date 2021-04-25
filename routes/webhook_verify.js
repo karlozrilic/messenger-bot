@@ -1,5 +1,5 @@
 import request from 'request';
-import processPostback from '../processes/postback.js';
+import { processPostback } from '../processes/postback.js';
 import { processMessage } from '../processes/messages.js';
 import { processQuickReply } from '../processes/quickReply.js';
 /*
