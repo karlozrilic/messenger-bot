@@ -1,11 +1,12 @@
 const sendMessage = require('../messageSender/sendMessage');
 const messages = require('../processes/messages');
 const processPostback = require('../processes/postback');
-import { LocalStorage } from 'node-localstorage';
-
-const localStorage = new LocalStorage('./scratch'); 
 
 module.exports = function senderAction(recipientId, messageText, event) {
+
+    import { LocalStorage } from 'node-localstorage';
+
+    const localStorage = new LocalStorage('./scratch'); 
 
     let odg;
 
