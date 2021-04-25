@@ -6,12 +6,11 @@ const sendMessage = require('../messageSender/sendMessage');
 */
 
 export const processPostback = (event) => {
-     const senderID = event.sender.id;
-     const payload = event?.postback?.payload;
-     const message = event?.message?.text.toLowerCase();
-     let senderName;
+    const senderID = event.sender.id;
+    const payload = event?.postback?.payload;
+    const message = event?.message?.text.toLowerCase();
 
-     if (payload === 'WELCOME') {
+    if (payload === 'WELCOME') {
         request({
             url: "https://graph.facebook.com/v2.6/" + senderID,
             qs: {
@@ -20,6 +19,7 @@ export const processPostback = (event) => {
             },
             method: "GET"
         }, function(error, response, body) {
+            let senderName;
             let greeting = '';
             if (error) {
                 console.error("Error getting user name: " + error);
@@ -42,5 +42,5 @@ export const processPostback = (event) => {
                 });
             });
         });
-     }
- }
+    }
+}
