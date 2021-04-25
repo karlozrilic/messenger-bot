@@ -48,8 +48,6 @@ export const senderAction = (recipientId, messageText, event) => {
             ]
         }
         sendMessage(recipientId, message);
-    } else if (messageText == "i want in!") {
-        processPostback(event);
     } else if (messageText == "de") {
         localStorage.setItem('Language', 'de');
         message = {
