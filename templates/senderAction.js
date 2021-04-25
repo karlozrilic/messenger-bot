@@ -20,8 +20,12 @@ export const senderAction = (recipientId, messageText, event) => {
     messageText = messageText.toLowerCase();
 
     if (messageText == "hi" || messageText == "hello") {
-        if (localStorage.getItem('Users').recipientId == "de") {
-            odg = "Halooo";
+        if (localStorage.getItem('Users').recipientId) {
+            if (localStorage.getItem('Users').recipientId == "de") {
+                odg = "Halooo";
+            } else {
+                odg = "Heloooo!";
+            }
         } else {
             odg = "Heloooo!";
         }
