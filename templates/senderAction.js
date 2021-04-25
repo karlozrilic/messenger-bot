@@ -7,11 +7,11 @@ const messages = require('../processes/messages');
 const processPostback = require('../processes/postback');
 */
 
+import { LocalStorage } from 'node-localstorage';
+
+const localStorage = new LocalStorage('./scratch'); 
+
 export const senderAction = (recipientId, messageText, event) => {
-
-    import { LocalStorage } from 'node-localstorage';
-
-    const localStorage = new LocalStorage('./scratch'); 
 
     let odg;
 
