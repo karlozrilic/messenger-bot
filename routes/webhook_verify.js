@@ -5,7 +5,7 @@ const processMessage = require('../processes/messages');
 const processQuickReply = require('../processes/quickReply');
 
 
-export default function verifyWebhook(app, chalk) {
+export const verifyWebhook = (app, chalk) => {
 
    	request({
 		url: "https://graph.facebook.com/v10.0/me/messenger_profile",
