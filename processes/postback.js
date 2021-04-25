@@ -7,7 +7,6 @@ const sendMessage = require('../messageSender/sendMessage');
      const message = event?.message?.text.toLowerCase();
 
     console.log(event);
-    console.log(event.message);
 
      if (payload === 'WELCOME') {
         request({
