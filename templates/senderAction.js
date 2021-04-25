@@ -6,11 +6,12 @@ import { checkLanguage, setLanguage, clearLanguage } from '../functions/handleLa
 const sendMessage = require('../messageSender/sendMessage');
 const messages = require('../processes/messages');
 const processPostback = require('../processes/postback');
-*/
+
 
 import { LocalStorage } from 'node-localstorage';
 
-const localStorage = new LocalStorage('./scratch'); 
+const localStorage = new LocalStorage('./scratch');
+*/
 
 export const senderAction = (recipientId, messageText, event) => {
 
