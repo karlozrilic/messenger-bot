@@ -22,9 +22,9 @@ export const senderAction = (recipientId, messageText, event) => {
     let userID = recipientId.toString();
 
     if (messageText == "hi" || messageText == "hello") {
-        console.log("ID: " +localStorage?.getItem('Users')?.userID);
-        if (localStorage?.getItem('Users')?.userID) {
-            if (localStorage.getItem('Users').userID == "de") {
+        console.log("ID: " +localStorage?.getItem('Users')?.[userID]);
+        if (localStorage?.getItem('Users')?.[userID]) {
+            if (localStorage.getItem('Users')?.[userID] == "de") {
                 odg = "Halooo";
             } else {
                 odg = "Heloooo!";
@@ -56,7 +56,7 @@ export const senderAction = (recipientId, messageText, event) => {
         }
         sendMessage(recipientId, message);
     } else if (messageText == "de") {
-        localStorage.setItem('Users', {userID: "de"});
+        localStorage.setItem('Users', {[userID]: "de"});
         console.log("HERE: "+localStorage.getItem('Users'))
         message = {
             text: "Willkommen"
