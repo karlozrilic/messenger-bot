@@ -54,6 +54,12 @@ export const senderAction = (recipientId, messageText, event) => {
             text: "Willkommen"
         };
         sendMessage(recipientId, message);
+    } else if (messageText == "clear") {
+        localStorage.clear();
+        message = {
+            text: "Local storage cleared"
+        };
+        sendMessage(recipientId, message)
     } else {
         odg = "I don't understand";
         message = {
