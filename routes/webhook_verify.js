@@ -3,7 +3,7 @@ const processPostback = require('../processes/postback');
 const processMessage = require('../processes/messages');
 const processQuickReply = require('../processes/quickReply');
 
-module.exports = function(app, chalk) {
+module.exports = function verifyWebhook(app, chalk) {
 
    	request({
 		url: "https://graph.facebook.com/v10.0/me/messenger_profile",
