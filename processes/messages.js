@@ -21,6 +21,7 @@ export const processMessage = (event) => {
         
             if (Object.keys(responses.commands).includes(text)) {
                 if (flag) {
+                    console.error(responses.commands[text]);
                     if (responses.commands[text]) {
                         response = {
                             text: responses.commands[text].descriptions[checkLanguageCode(senderID)]
