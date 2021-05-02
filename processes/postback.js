@@ -45,11 +45,11 @@ export const processPostback = (event) => {
             console.log(bodyObject);
             senderName = bodyObject.first_name;
         }
-        console.error(lang);
-        console.error(responses.greetings);
-        let message = responses.greetings[lang][0].replace("$", senderName ? senderName : "");
-        let message2 = responses.greetings[lang][1];
-        let message3 = responses.greetings[langg][2].replace("$", `
+        const messages = responses.greetings.find(element => element.langCode === lang);
+        console.error(messages);
+        let message = messages[0].replace("$", senderName ? senderName : "");
+        let message2 = messages[1];
+        let message3 = messages[2].replace("$", `
         -color
         -hi`);
         sendMessage(senderID, {text: message}).then(() => {
