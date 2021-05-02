@@ -37,12 +37,13 @@ export const processPostback = (event) => {
         },
         method: "GET"
     }, (error, response, body) => {
+        let senderName = "";
         if (error) {
             console.error("Error getting user name: " + error);
         } else {
             let bodyObject = JSON.parse(body);
             console.log(bodyObject);
-            let senderName = bodyObject.first_name;
+            senderName = bodyObject.first_name;
         }
         let message = responses.greetings[lang][0].replace("$", senderName ? senderName : "");
         let message2 = responses.greetings[lang][1];
