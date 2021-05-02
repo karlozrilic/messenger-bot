@@ -2,12 +2,6 @@ import request from 'request';
 import { processPostback } from '../processes/postback.js';
 import { processMessage } from '../processes/messages.js';
 import { processQuickReply } from '../processes/quickReply.js';
-/*
-const request = require('request');
-const processPostback = require('../processes/postback');
-const processMessage = require('../processes/messages');
-const processQuickReply = require('../processes/quickReply');
-*/
 
 export const verifyWebhook = (app, chalk) => {
 
@@ -25,24 +19,6 @@ export const verifyWebhook = (app, chalk) => {
 				}
 			],
 			ice_breakers:[
-				/*
-				{
-					question: "I want in! (only one that currently works)",
-					payload: "WELCOME"
-				},
-				{
-					question: "Where are you located?",
-					payload: "LOCATION_POSTBACK_PAYLOAD"
-				},
-				{
-					question: "What are your hours?",
-					payload: "HOURS_POSTBACK_PAYLOAD"
-				},
-				{
-					question: "Can you tell me more about your business?",
-					payload: "MORE_POSTBACK_PAYLOAD"
-				}
-				*/
 				{
 					question: "English",
 					payload: "en"

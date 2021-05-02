@@ -2,24 +2,35 @@ import { sendMessage } from '../messageSender/sendMessage.js';
 import { processMessage } from '../processes/messages.js';
 import { processPostback } from '../processes/postback.js';
 import { checkLanguage, changeLanguage, clearLanguage } from '../functions/handleLanguage.js';
-/*
-const sendMessage = require('../messageSender/sendMessage');
-const messages = require('../processes/messages');
-const processPostback = require('../processes/postback');
-
-
-import { LocalStorage } from 'node-localstorage';
-
-const localStorage = new LocalStorage('./scratch');
-*/
+import responses from '../responses/responses.js';
 
 export const senderAction = (recipientId, messageText, event) => {
-
+    sendMessage(recipientId, messageObject);
+/*
     let odg;
 
     let message = {};
 
     messageText = messageText.toLowerCase();
+    let flag;
+
+    if (messageText.includes("-")) {
+        messageText = messageText.split(" ")[0];
+        flag = messageText.split(" -")[1];
+    }
+
+    if (Object.keys(responses.commands).includes(messageText)) {
+        if (flag) {
+            message = {
+                text: responses.commands[messageText].description
+            };
+            sendMessage(recipientId, message);
+        } else {
+
+        }
+    } else {
+        sendMessage(recipientId, "Cant find that command");
+    }
 
     let userID = recipientId.toString();
 
@@ -71,5 +82,5 @@ export const senderAction = (recipientId, messageText, event) => {
             text: odg
         };
         sendMessage(recipientId, message);
-    }
+    }*/
 }

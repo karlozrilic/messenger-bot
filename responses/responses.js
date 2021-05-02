@@ -28,7 +28,18 @@ export default
             "languageName": "Français"
         }
     },
-    "commands": [
-        "lang", "color", "hi"
-    ]
+    "commands": {
+        "lang": {
+            "description": "w"
+        },
+        "color": {
+            "description": "s"
+        },
+        "hi": {
+            "description": "d"
+        },
+        "visa": {
+            "description": "v"
+        }
+    }
 }
