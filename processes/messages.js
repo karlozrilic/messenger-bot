@@ -52,17 +52,16 @@ export const processMessage = (event) => {
                         senderAction(senderID, response, eent);
                     } else if (original === "visa") {
                         response = {
-                            //text: responses.commands[original].answers[checkLanguageCode(senderID)].message,
                             attachment: {
                                 type: "template",
                                 payload: {
                                   template_type: "button",
-                                  text: responses.commands[original].answers[checkLanguageCode(senderID)].buttonText,
+                                  text: responses.commands[original].answers[checkLanguageCode(senderID)].message,
                                   buttons: [
                                     {
                                       type: "web_url",
                                       url: responses.commands[original].answers[checkLanguageCode(senderID)].link,
-                                      title: "URL Button",
+                                      title: responses.commands[original].answers[checkLanguageCode(senderID)].buttonText,
                                       webview_height_ratio: "full"
                                     }
                                   ]
