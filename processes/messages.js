@@ -31,12 +31,12 @@ export const processMessage = (event) => {
                     }
                     senderAction(senderID, response, event);
                 } else {
-                    if (messageText == "hi" || messageText == "hello") {
+                    if (text == "hi" || text == "hello") {
                         response = {
                             text: checkLanguage(userID)
                         };
                         senderAction(recipientId, response, event);
-                    } else if (messageText == "color") {
+                    } else if (text == "color") {
                         response = {
                             text: "Pick a color:",
                             quick_replies: [
@@ -55,17 +55,17 @@ export const processMessage = (event) => {
                             ]
                         }
                         senderAction(recipientId, response, eent);
-                    } else if (messageText == "de" || messageText == "es") {
+                    } else if (text == "de" || text == "es") {
                         response = {
-                            text: changeLanguage(userID, messageText)
+                            text: changeLanguage(userID, text)
                         };
                         senderAction(recipientId, response, event);
-                    } else if (messageText == "lang") {
+                    } else if (text == "lang") {
                         response = {
                             text: checkLanguage(recipientId)
                         }
                         senderAction(recipientId, response, event);
-                    } else if (messageText == "clear") {
+                    } else if (text == "clear") {
                         clearLanguage();
                         response = {
                             text: "Local storage cleared"
