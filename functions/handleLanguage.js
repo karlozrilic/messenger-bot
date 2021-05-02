@@ -1,4 +1,5 @@
 import { LocalStorage } from 'node-localstorage';
+import responses from '../responses/responses.js';
 
 const localStorage = new LocalStorage('./scratch'); 
 
@@ -31,7 +32,8 @@ export const changeLanguage = (userID, langCode) => {
 };
 
 const makeWelcomeResponse = (langCode) => {
-    let response;
+    let response = responses.greetings[langCode][0];
+    /*
     switch(langCode) {
         case "de":
             response = "Willkommen";
@@ -46,6 +48,7 @@ const makeWelcomeResponse = (langCode) => {
             response = "Welcome";
             break;
     }
+    */
     return response;
 };
 
