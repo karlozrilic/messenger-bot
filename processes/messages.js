@@ -16,8 +16,8 @@ export const processMessage = (event) => {
             console.log(text);
         
             if (text.includes("-")) {
-                text = text.split(" ")[0];
                 flag = text.split("-")[1];
+                text = text.split(" ")[0];
                 console.log(text.split("-")[1])
             }
         
