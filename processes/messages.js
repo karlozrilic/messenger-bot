@@ -35,7 +35,7 @@ export const processMessage = (event) => {
                         response = {
                             text: checkLanguage(userID)
                         };
-                        senderAction(recipientId, response, event);
+                        senderAction(senderID, response, event);
                     } else if (text == "color") {
                         response = {
                             text: "Pick a color:",
@@ -54,28 +54,28 @@ export const processMessage = (event) => {
                                 }
                             ]
                         }
-                        senderAction(recipientId, response, eent);
+                        senderAction(senderID, response, eent);
                     } else if (text == "de" || text == "es") {
                         response = {
                             text: changeLanguage(userID, text)
                         };
-                        senderAction(recipientId, response, event);
+                        senderAction(senderID, response, event);
                     } else if (text == "lang") {
                         response = {
-                            text: checkLanguage(recipientId)
+                            text: checkLanguage(senderID)
                         }
-                        senderAction(recipientId, response, event);
+                        senderAction(senderID, response, event);
                     } else if (text == "clear") {
                         clearLanguage();
                         response = {
                             text: "Local storage cleared"
                         };
-                        senderAction(recipientId, response, event);
+                        senderAction(senderID, response, event);
                     } else {
                         response = {
                             text: "I don't understand"
                         };
-                        senderAction(recipientId, response, event);
+                        senderAction(senderID, response, event);
                     }
                 }
             } else {
