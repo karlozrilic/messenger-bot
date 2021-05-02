@@ -66,11 +66,6 @@ export const processMessage = (event) => {
                             text: "Local storage cleared"
                         };
                         senderAction(senderID, response, event);
-                    } else {
-                        response = {
-                            text: "I don't understand"
-                        };
-                        senderAction(senderID, response, event);
                     }
                 }
             } else {
