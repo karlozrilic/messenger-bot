@@ -1,6 +1,6 @@
 import request from 'request';
 import { sendMessage } from '../messageSender/sendMessage.js';
-import { changeLanguage, makeWelcomeResponse } from '../functions/handleLanguage.js';
+import { changeLanguage } from '../functions/handleLanguage.js';
 const responses = require('../responses/responses.json');
 /*
 const request = require('request');
