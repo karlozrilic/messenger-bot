@@ -45,7 +45,7 @@ export const processPostback = (event) => {
             console.log(bodyObject);
             senderName = bodyObject.first_name;
         }
-        const messages = responses.greetings.find(element => element.langCode === lang).messages;
+        const messages = responses.greetings[lang].messages;
         console.error(messages);
         let message = messages[0].replace("$", senderName ? senderName : "");
         let message2 = messages[1];
