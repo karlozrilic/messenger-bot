@@ -18,6 +18,12 @@ export const verifyWebhook = (app, chalk) => {
 		},
 		method: "POST",
 		json: {
+			greeting: [
+				{
+					locale: "default",
+					text: "Alooooooo!!!!"
+				}
+			],
 			ice_breakers:[
 				{
 					question: "I want in! (only one that currently works)",
