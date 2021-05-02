@@ -50,6 +50,11 @@ export const processMessage = (event) => {
                             ]
                         }
                         senderAction(senderID, response, eent);
+                    } else if (original === "visa") {
+                        response = {
+                            text: responses.commands[original].answers[checkLanguageCode(senderID)]
+                        };
+                        senderAction(senderID, response, event);
                     } else if (original == "de" || original == "es") {
                         response = {
                             text: changeLanguage(userID, text)

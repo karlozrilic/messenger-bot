@@ -51,6 +51,12 @@ export default
                 "es": "hello in es",
                 "de": "hello in de",
                 "fr": "hello in fr"
+            },
+            "answers": {
+                "en": "Hello",
+                "es": "Hola",
+                "de": "Hallo",
+                "fr": "Bonjour"
             }
         },
         "visa": {
@@ -59,6 +65,12 @@ export default
                 "es": "Descubra la información de Visa",
                 "de": "Informieren Sie sich über Visa-Informationen",
                 "fr": "Découvrez les informations sur les visas"
+            },
+            "answers": {
+                "en": "For Visa informations check more here: https://it-zavrsni-projekt.vercel.app/visa-informations",
+                "es": "Para obtener información sobre Visa, consulte más aquí: https://it-zavrsni-projekt.vercel.app/visa-informations",
+                "de": "Weitere Informationen zu Visa finden Sie hier: https://it-zavrsni-projekt.vercel.app/visa-informations",
+                "fr": "Pour plus d'informations sur les visas, cliquez ici: https://it-zavrsni-projekt.vercel.app/visa-informations"
             }
         }
     }
