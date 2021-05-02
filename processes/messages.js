@@ -21,16 +21,9 @@ export const processMessage = (event) => {
         
             if (Object.keys(responses.commands).includes(text)) {
                 if (flag) {
-                    console.error(responses.commands[text]);
-                    if (responses.commands[text]) {
-                        response = {
-                            text: responses.commands[text].descriptions[checkLanguageCode(senderID)]
-                        };
-                    } else {
-                        response = {
-                            text: "No description for that command!"
-                        }
-                    }
+                    response = {
+                        text: responses.commands[text].descriptions[checkLanguageCode(senderID)]
+                    };
                     senderAction(senderID, response, event);
                 } else {
                     if (original == "hi" || original == "hello") {
@@ -81,7 +74,7 @@ export const processMessage = (event) => {
                     }
                 }
             } else {
-                senderAction(senderID, "Cant find that command", event);
+                senderAction(senderID, {text: "That command doesn't exist!"}, event);
             }
 
             //senderAction(senderID, text, event);
