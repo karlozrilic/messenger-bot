@@ -1,5 +1,7 @@
 import request from 'request';
 import { sendMessage } from '../messageSender/sendMessage.js';
+import { changeLanguage, makeWelcomeResponse } from '../functions/handleLanguage.js';
+const responses = require('../responses/responses.json');
 /*
 const request = require('request');
 const sendMessage = require('../messageSender/sendMessage');
@@ -10,6 +12,24 @@ export const processPostback = (event) => {
     const payload = event?.postback?.payload;
     const message = event?.message?.text.toLowerCase();
 
+    let lang;
+
+    switch (payload) {
+        case "de":
+            lang = "de";
+            break;
+        case "es":
+            lang = "es";
+            break;
+        case "es":
+            lang = "fr";
+            break;
+        default:
+            lang = "en";
+            break;
+    }
+
+    /*
     if (payload === 'WELCOME') {
         request({
             url: "https://graph.facebook.com/v2.6/" + senderID,
@@ -42,4 +62,5 @@ export const processPostback = (event) => {
             });
         });
     }
+    */
 }

@@ -25,6 +25,7 @@ export const verifyWebhook = (app, chalk) => {
 				}
 			],
 			ice_breakers:[
+				/*
 				{
 					question: "I want in! (only one that currently works)",
 					payload: "WELCOME"
@@ -40,6 +41,23 @@ export const verifyWebhook = (app, chalk) => {
 				{
 					question: "Can you tell me more about your business?",
 					payload: "MORE_POSTBACK_PAYLOAD"
+				}
+				*/
+				{
+					question: "English",
+					payload: "en"
+				},
+				{
+					question: "Deutsche",
+					payload: "de"
+				},
+				{
+					question: "Español",
+					payload: "es"
+				},
+				{
+					question: "Français",
+					payload: "fr"
 				}
 			]
 		}

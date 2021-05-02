@@ -12,6 +12,9 @@ export const checkLanguage = (userID) => {
             case "es":
                 response = "Haaaa [es]";
                 break;
+            case "fr":
+                response = "Haaaa [fr]";
+                break;
             default:
                 response = "Heloooo!"
                 break;
@@ -35,6 +38,9 @@ const makeWelcomeResponse = (langCode) => {
             break;
         case "es":
             response = "La bienvenida";
+            break;
+        case "fr":
+            response = "Bienvenue";
             break;
         default:
             response = "Welcome";
