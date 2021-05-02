@@ -65,7 +65,6 @@ export const verifyWebhook = (app, chalk) => {
 					if (event.postback){
 						processPostback(event);
 					} else if (event.message){
-						console.log(event.message.nlp);
 						if (event.message.quick_reply) {
 							processQuickReply(event);
 						} else {

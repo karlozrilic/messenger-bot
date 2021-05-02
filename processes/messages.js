@@ -12,10 +12,13 @@ export const processMessage = (event) => {
             let response;
 
             let flag;
+
+            console.log(text);
         
             if (text.includes("-")) {
                 text = text.split(" ")[0];
                 flag = text.split(" -")[1];
+                console.log(flag)
             }
         
             if (Object.keys(responses.commands).includes(text)) {
