@@ -16,16 +16,16 @@ export default
     },
     "languages": {
         "en": {
-            "name": "English"
+            "languageName": "English"
         },
         "es": {
-            "name": "Español"
+            "languageName": "Español"
         },
         "de": {
-            "name": "Deutsche"
+            "languageName": "Deutsche"
         },
         "fr": {
-            "name": "Français"
+            "languageName": "Français"
         }
     },
     "commands": [

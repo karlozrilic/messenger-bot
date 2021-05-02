@@ -6,6 +6,8 @@ const localStorage = new LocalStorage('./scratch');
 export const checkLanguage = (userID) => {
     let response;
     if (localStorage?.getItem(userID)) {
+        response = responses.languages[localStorage.getItem(userID)].languageName
+        /*
         switch (localStorage.getItem(userID)) {
             case "de":
                 response = "Halloo [de]";
@@ -19,11 +21,11 @@ export const checkLanguage = (userID) => {
             default:
                 response = "Heloooo!"
                 break;
-        }
+        }*/
     } else {
-        response = "Heloooo!";
+        response = responses.languages.en.languageName
     }
-    return responses.languages.sss.nesto;
+    return response;
 };
 
 export const changeLanguage = (userID, langCode) => {
