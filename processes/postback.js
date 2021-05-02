@@ -46,7 +46,7 @@ export const processPostback = (event) => {
             senderName = bodyObject.first_name;
         }
         const messages = responses.greetings[lang].messages;
-        const commands = "-"+responses.commands.join("\n-");
+        const commands = "\n-"+responses.commands.join("\n-");
         console.error(messages);
         let message = messages[0].replace("$", senderName ? senderName : "");
         let message2 = messages[1];
