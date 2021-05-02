@@ -54,6 +54,11 @@ export const senderAction = (recipientId, messageText, event) => {
             text: response
         };
         sendMessage(recipientId, message);
+    } else if (messageText == "lang") {
+        message = {
+            text: checkLanguage()
+        }
+        sendMessage(recipientId, message);
     } else if (messageText == "clear") {
         clearLanguage();
         message = {
