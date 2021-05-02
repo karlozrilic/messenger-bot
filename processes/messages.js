@@ -52,7 +52,22 @@ export const processMessage = (event) => {
                         senderAction(senderID, response, eent);
                     } else if (original === "visa") {
                         response = {
-                            text: responses.commands[original].answers[checkLanguageCode(senderID)]
+                            text: responses.commands[original].answers[checkLanguageCode(senderID)].message,
+                            attachment: {
+                                type: "template",
+                                payload: {
+                                  template_type: "button",
+                                  text: responses.commands[original].answers[checkLanguageCode(senderID)].buttonText,
+                                  buttons: [
+                                    {
+                                      type: "web_url",
+                                      url: responses.commands[original].answers[checkLanguageCode(senderID)].link,
+                                      title: "URL Button",
+                                      webview_height_ratio: "full"
+                                    }
+                                  ]
+                                }
+                              }
                         };
                         senderAction(senderID, response, event);
                     } else if (original == "de" || original == "es") {

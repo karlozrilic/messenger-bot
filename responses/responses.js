@@ -67,10 +67,26 @@ export default
                 "fr": "Découvrez les informations sur les visas"
             },
             "answers": {
-                "en": "For Visa informations check more here: https://it-zavrsni-projekt.vercel.app/visa-informations",
-                "es": "Para obtener información sobre Visa, consulte más aquí: https://it-zavrsni-projekt.vercel.app/visa-informations",
-                "de": "Weitere Informationen zu Visa finden Sie hier: https://it-zavrsni-projekt.vercel.app/visa-informations",
-                "fr": "Pour plus d'informations sur les visas, cliquez ici: https://it-zavrsni-projekt.vercel.app/visa-informations"
+                "en": {
+                    "message": "For Visa informations check more here:",
+                    "buttonText": "Here",
+                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
+                }, 
+                "es": {
+                    "message": "Para obtener información sobre Visa, consulte más aquí:",
+                    "buttonText": "Aquí",
+                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
+                },
+                "de": {
+                    "message": "Weitere Informationen zu Visa finden Sie hier",
+                    "buttonText": "Hier",
+                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
+                },
+                "fr": {
+                    "message": "Pour plus d'informations sur les visas, cliquez ici:",
+                    "buttonText": "Ici",
+                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
+                }
             }
         }
     }
