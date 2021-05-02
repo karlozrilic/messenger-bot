@@ -52,7 +52,7 @@ export const processMessage = (event) => {
                         senderAction(senderID, response, eent);
                     } else if (original === "visa") {
                         response = {
-                            text: responses.commands[original].answers[checkLanguageCode(senderID)].message,
+                            //text: responses.commands[original].answers[checkLanguageCode(senderID)].message,
                             attachment: {
                                 type: "template",
                                 payload: {
