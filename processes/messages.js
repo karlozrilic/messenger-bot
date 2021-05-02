@@ -1,5 +1,5 @@
 import { senderAction } from '../templates/senderAction.js';
-import { checkLanguage, changeLanguage, clearLanguage } from '../functions/handleLanguage.js';
+import { checkLanguageCode, checkLanguage, changeLanguage, clearLanguage } from '../functions/handleLanguage.js';
 import responses from '../responses/responses.js';
 
 export const processMessage = (event) => {
@@ -13,19 +13,16 @@ export const processMessage = (event) => {
 
             let flag;
 
-            console.log(text);
-        
             if (text.includes("-")) {
                 flag = text.split("-")[1];
                 text = text.split(" ")[0];
-                console.log(flag)
             }
         
             if (Object.keys(responses.commands).includes(text)) {
                 if (flag) {
                     if (responses.commands[text]) {
                         response = {
-                            text: responses.commands[text].description
+                            text: responses.commands[text].descriptions[checkLanguageCode(senderID)]
                         };
                     } else {
                         response = {

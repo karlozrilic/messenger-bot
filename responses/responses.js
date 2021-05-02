@@ -30,16 +30,36 @@ export default
     },
     "commands": {
         "lang": {
-            "description": "w"
+            "descriptions": {
+                "en": "Check current language",
+                "es": "Consultar idioma actual",
+                "de": "Überprüfen Sie die aktuelle Sprache",
+                "fr": "Vérifier la langue actuelle"
+            }
         },
         "color": {
-            "description": "s"
+            "descriptions": {
+                "en": "en desc",
+                "es": "es desc",
+                "de": "de desc",
+                "fr": "fr desc"
+            }
         },
         "hi": {
-            "description": "d"
+            "descriptions": {
+                "en": "hello in en",
+                "es": "hello in es",
+                "de": "hello in de",
+                "fr": "hello in fr"
+            }
         },
         "visa": {
-            "description": "v"
+            "descriptions": {
+                "en": "Find out Visa information",
+                "es": "Descubra la información de Visa",
+                "de": "Informieren Sie sich über Visa-Informationen",
+                "fr": "Découvrez les informations sur les visas"
+            }
         }
     }
 }

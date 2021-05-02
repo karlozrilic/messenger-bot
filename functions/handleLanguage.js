@@ -28,6 +28,16 @@ export const checkLanguage = (userID) => {
     return response;
 };
 
+export const checkLanguageCode = (userID) => {
+    let langCode;
+    if (localStorage?.getItem(userID)) {
+        langCode = localStorage.getItem(userID);
+    } else {
+        langCode = "en";
+    }
+    return langCode;
+};
+
 export const changeLanguage = (userID, langCode) => {
     localStorage.setItem(userID, langCode);
     return makeWelcomeResponse(langCode);
