@@ -23,7 +23,7 @@ export const checkLanguage = (userID) => {
     } else {
         response = "Heloooo!";
     }
-    return response;
+    return responses.languages.sss.nesto;
 };
 
 export const changeLanguage = (userID, langCode) => {

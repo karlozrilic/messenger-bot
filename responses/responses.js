@@ -18,6 +18,11 @@ export default
             "messages": ["Bonjour $. Bienvenue chez Digital nomads - Zadar. J'espère que tu vas bien aujourd'hu.", "Je suis ici pour vous aider :-)", "Veuillez saisir l'une des commandes suivantes: $"]
         }
     ],
+    "languages": [
+        "sss" = {
+            "nesto": "nista"
+        }
+    ],
     "commands": [
 
     ]
