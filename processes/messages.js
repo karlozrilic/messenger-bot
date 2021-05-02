@@ -7,7 +7,8 @@ export const processMessage = (event) => {
         const message = event.message;
         const senderID = event.sender.id;
         if (message.text) {
-            let text = message.text.toLowerCase();
+            let original = message.text.toLowerCase();
+            let text = original;
 
             let response;
 
