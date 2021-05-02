@@ -21,7 +21,7 @@ export const processPostback = (event) => {
         case "es":
             lang = "es";
             break;
-        case "es":
+        case "fr":
             lang = "fr";
             break;
         default:
