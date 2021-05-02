@@ -4,7 +4,7 @@ import { processPostback } from '../processes/postback.js';
 import { checkLanguage, changeLanguage, clearLanguage } from '../functions/handleLanguage.js';
 import responses from '../responses/responses.js';
 
-export const senderAction = (recipientId, messageText, event) => {
+export const senderAction = (recipientId, messageObject, event) => {
     sendMessage(recipientId, messageObject);
 /*
     let odg;
