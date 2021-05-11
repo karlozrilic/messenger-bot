@@ -41,14 +41,6 @@ export default
                 "fr": "Vérifier la langue actuelle"
             }
         },
-        "color": {
-            "descriptions": {
-                "en": "en desc",
-                "es": "es desc",
-                "de": "de desc",
-                "fr": "fr desc"
-            }
-        },
         "hi": {
             "descriptions": {
                 "en": "hello in en",

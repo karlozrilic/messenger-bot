@@ -31,25 +31,6 @@ export const processMessage = (event) => {
                             text: checkLanguage(userID)
                         };
                         senderAction(senderID, response, event);
-                    } else if (original == "color") {
-                        response = {
-                            text: "Pick a color:",
-                            quick_replies: [
-                                {
-                                    content_type: "text",
-                                    title: "Red",
-                                    payload: "its-red",
-                                    image_url: "https://www.iconsdb.com/icons/preview/red/circle-xxl.png"
-                                }, 
-                                {
-                                    content_type: "text",
-                                    title: "Green",
-                                    payload: "its-green",
-                                    image_url: "https://www.iconsdb.com/icons/preview/green/circle-xxl.png"
-                                }
-                            ]
-                        }
-                        senderAction(senderID, response, eent);
                     } else if (original === "visa") {
                         response = {
                             attachment: {
