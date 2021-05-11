@@ -16,15 +16,19 @@ export default
     },
     "languages": {
         "en": {
+            "languageCheck": "Your selected language is: ",
             "languageName": "English"
         },
         "es": {
+            "languageCheck": "Su idioma seleccionado es: ",
             "languageName": "Español"
         },
         "de": {
+            "languageCheck": "Ihre ausgewählte Sprache ist: ",
             "languageName": "Deutsche"
         },
         "fr": {
+            "languageCheck": "Votre langue sélectionnée est: ",
             "languageName": "Français"
         }
     },
