@@ -9,7 +9,7 @@ export const quickReplyAction = (recipientId, payload) => {
     if (Object.keys(responses.languages).includes(payload)) {
         changeLanguage(recipientId, payload);
         message = {
-            text: responses.commands["change language"].quick_replies.filter(el => el.payload == payload)[0].title
+            text: responses.commands["change language"].quick_replies.filter(el => el.payload == payload)[0].message
         }
     } else {
         // TODO change to accept languges

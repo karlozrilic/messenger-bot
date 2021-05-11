@@ -89,19 +89,23 @@ export default
             "quick_replies": [
                 {
                     "payload": "en",
-                    "title": "English"
+                    "title": "English",
+                    "message": "Language changed to English."
                 },
                 {
                     "payload": "es",
-                    "title": "Español"
+                    "title": "Español",
+                    "message": "Idioma cambiado a español."
                 },
                 {
                     "payload": "de",
-                    "title": "Deutsche"
+                    "title": "Deutsche",
+                    "message": "Die Sprache wurde in Deuche geändert."
                 },
                 {
                     "payload": "fr",
-                    "title": "Français"
+                    "title": "Français",
+                    "message": "Changement de langue en français."
                 }
             ],
             "descriptions": {
