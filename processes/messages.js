@@ -53,7 +53,7 @@ export const processMessage = (event) => {
                     } else if (original === "visa") {
                         // Checking if message came from chat plugin or directly from messenger
                         console.log("HERE");
-                        console.log(message);
+                        console.log(event);
                         if (message.tags.source === "customer_chat_plugin") {
                             response = {
                                 text: 'Navigate to "Visa informations" page located at the top.'
