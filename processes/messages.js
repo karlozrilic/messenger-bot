@@ -51,23 +51,30 @@ export const processMessage = (event) => {
                         }
                         senderAction(senderID, response, eent);
                     } else if (original === "visa") {
-                        response = {
-                            attachment: {
-                                type: "template",
-                                payload: {
-                                  template_type: "button",
-                                  text: responses.commands[original].answers[checkLanguageCode(senderID)].message,
-                                  buttons: [
-                                    {
-                                      type: "web_url",
-                                      url: responses.commands[original].answers[checkLanguageCode(senderID)].link,
-                                      title: responses.commands[original].answers[checkLanguageCode(senderID)].buttonText,
-                                      webview_height_ratio: "full"
+                        // Checking if message came from chat plugin or directly from messenger
+                        if (message.tags.source === "customer_chat_plugin") {
+                            response = {
+                                text: 'Navigate to "Visa informations" page located at the top.'
+                            };
+                        } else {
+                            response = {
+                                attachment: {
+                                    type: "template",
+                                    payload: {
+                                      template_type: "button",
+                                      text: responses.commands[original].answers[checkLanguageCode(senderID)].message,
+                                      buttons: [
+                                        {
+                                          type: "web_url",
+                                          url: responses.commands[original].answers[checkLanguageCode(senderID)].link,
+                                          title: responses.commands[original].answers[checkLanguageCode(senderID)].buttonText,
+                                          webview_height_ratio: "full"
+                                        }
+                                      ]
                                     }
-                                  ]
-                                }
-                              }
-                        };
+                                  }
+                            };
+                        }
                         senderAction(senderID, response, event);
                     } else if (original == "de" || original == "es") {
                         response = {
