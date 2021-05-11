@@ -92,6 +92,9 @@ export default
                     "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
                 }
             }
+        },
+        "change language": {
+            
         }
     }
 }

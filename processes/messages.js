@@ -70,9 +70,9 @@ export const processMessage = (event) => {
                             }
                         };
                         senderAction(senderID, response, event);
-                    } else if (original == "de" || original == "es") {
+                    } else if (original == "change language") {
                         response = {
-                            text: changeLanguage(userID, text)
+                            text: "change"//changeLanguage(userID, text)
                         };
                         senderAction(senderID, response, event);
                     } else if (original == "lang") {
