@@ -72,7 +72,14 @@ export const processMessage = (event) => {
                         senderAction(senderID, response, event);
                     } else if (original == "change language") {
                         response = {
-                            text: "change"//changeLanguage(userID, text)
+                            text: responses.commands[original].answers[checkLanguageCode(senderID)].message,
+                            quick_replies: responses.commands[original].quick_replies.map(element => {
+                                return {
+                                    content_type: "text",
+                                    title: element.title,
+                                    payload: element.payload
+                                }
+                            })
                         };
                         senderAction(senderID, response, event);
                     } else if (original == "lang") {

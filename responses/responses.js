@@ -94,7 +94,44 @@ export default
             }
         },
         "change language": {
-            
+            "quick_replies": [
+                {
+                    "payload": "en",
+                    "title": "English"
+                },
+                {
+                    "payload": "es",
+                    "title": "Español"
+                },
+                {
+                    "payload": "de",
+                    "title": "Deutsche"
+                },
+                {
+                    "payload": "fr",
+                    "title": "Français"
+                }
+            ],
+            "descriptions": {
+                "en": "Find out Visa information",
+                "es": "Descubra la información de Visa",
+                "de": "Informieren Sie sich über Visa-Informationen",
+                "fr": "Découvrez les informations sur les visas"
+            },
+            "answers": {
+                "en": {
+                    "message": "Choose a language:"
+                }, 
+                "es": {
+                    "message": "Elige un idioma:"
+                },
+                "de": {
+                    "message": "Wählen Sie eine Sprache:"
+                },
+                "fr": {
+                    "message": "Choisissez une langue:"
+                }
+            }
         }
     }
 }
