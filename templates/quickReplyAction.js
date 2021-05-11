@@ -1,4 +1,5 @@
 import { sendMessage } from '../messageSender/sendMessage.js';
+import { changeLanguage } from '../functions/handleLanguage.js';
 import responses from '../responses/responses.js';
 
 export const quickReplyAction = (recipientId, payload) => {
