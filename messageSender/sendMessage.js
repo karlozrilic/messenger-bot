@@ -6,7 +6,7 @@ const request = require('request');
 export const sendMessage = (recipientId, message) => {
     return new Promise(function(resolve, reject) {
         request({
-            url: "https://graph.facebook.com/v2.6/me/messages",
+            url: "https://graph.facebook.com/v10.0/me/messages",
             qs: {
                 access_token: process.env.PAGE_ACCESS_TOKEN
             },
