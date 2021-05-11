@@ -58,6 +58,10 @@ export const processMessage = (event) => {
                         //    };
                         //} else {
                             response = {
+                                text:responses.commands[original].answers[checkLanguageCode(senderID)].link
+                            };
+                            /*
+                            response = {
                                 attachment: {
                                     type: "template",
                                     payload: {
@@ -74,7 +78,7 @@ export const processMessage = (event) => {
                                       ]
                                     }
                                   }
-                            };
+                            };*/
                         //}
                         senderAction(senderID, response, event);
                     } else if (original == "de" || original == "es") {
