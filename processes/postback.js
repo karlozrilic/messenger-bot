@@ -32,7 +32,7 @@ export const processPostback = (event) => {
     }
 
     request({
-        url: "https://graph.facebook.com/v2.6/" + senderID,
+        url: "https://graph.facebook.com/v10.0/" + senderID,
         qs: {
             access_token: process.env.PAGE_ACCESS_TOKEN,
             fields: "first_name"
