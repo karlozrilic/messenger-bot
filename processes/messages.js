@@ -68,6 +68,7 @@ export const processMessage = (event) => {
                                           type: "web_url",
                                           url: responses.commands[original].answers[checkLanguageCode(senderID)].link,
                                           title: responses.commands[original].answers[checkLanguageCode(senderID)].buttonText,
+                                          messenger_extensions: true,
                                           webview_height_ratio: "full"
                                         }
                                       ]
