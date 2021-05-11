@@ -57,6 +57,7 @@ export const processMessage = (event) => {
                         //        text: 'Navigate to "Visa informations" page located at the top.'
                         //    };
                         //} else {
+                            console.log(event)
                             response = {
                                 attachment: {
                                     type: "template",
