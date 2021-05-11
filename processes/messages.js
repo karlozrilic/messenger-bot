@@ -52,11 +52,11 @@ export const processMessage = (event) => {
                         senderAction(senderID, response, eent);
                     } else if (original === "visa") {
                         // Checking if message came from chat plugin or directly from messenger
-                        if (message.tags.source === "customer_chat_plugin") {
-                            response = {
-                                text: 'Navigate to "Visa informations" page located at the top.'
-                            };
-                        } else {
+                        //if (message.tags.source === "customer_chat_plugin") {
+                        //    response = {
+                        //        text: 'Navigate to "Visa informations" page located at the top.'
+                        //    };
+                        //} else {
                             response = {
                                 attachment: {
                                     type: "template",
@@ -74,7 +74,7 @@ export const processMessage = (event) => {
                                     }
                                   }
                             };
-                        }
+                        //}
                         senderAction(senderID, response, event);
                     } else if (original == "de" || original == "es") {
                         response = {
