@@ -66,22 +66,22 @@ export default
                 "en": {
                     "message": "For Visa informations check more here:",
                     "buttonText": "Here",
-                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
+                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations#visa"
                 }, 
                 "es": {
                     "message": "Para obtener información sobre Visa, consulte más aquí:",
                     "buttonText": "Aquí",
-                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
+                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations#visa"
                 },
                 "de": {
                     "message": "Weitere Informationen zu Visa finden Sie hier",
                     "buttonText": "Hier",
-                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
+                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations#visa"
                 },
                 "fr": {
                     "message": "Pour plus d'informations sur les visas, cliquez ici:",
                     "buttonText": "Ici",
-                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
+                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations#visa"
                 }
             }
         },
