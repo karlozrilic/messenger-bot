@@ -2,6 +2,8 @@ import { senderAction } from '../templates/senderAction.js';
 import { checkLanguageCode, checkLanguage, changeLanguage, clearLanguage } from '../functions/handleLanguage.js';
 import responses from '../responses/responses.js';
 
+const  WEBVIEW_HEIGH_RATIO = "compact";
+
 export const processMessage = (event) => {
     if (!event.message.is_echo) {
         const message = event.message;
@@ -15,8 +17,9 @@ export const processMessage = (event) => {
             let flag;
 
             if (text.includes("-")) {
-                flag = text.split("-")[1];
-                text = text.split(" ")[0];
+                const split = text.split(" -");
+                flag = split[1];
+                text = split[0];
             }
         
             if (Object.keys(responses.commands).includes(text)) {
@@ -26,12 +29,7 @@ export const processMessage = (event) => {
                     };
                     senderAction(senderID, response, event);
                 } else {
-                    if (original == "hi" || original == "hello") {
-                        response = {
-                            text: checkLanguage(userID)
-                        };
-                        senderAction(senderID, response, event);
-                    } else if (original === "visa") {
+                    if (original === "visa") {
                         response = {
                             attachment: {
                                 type: "template",
@@ -43,13 +41,32 @@ export const processMessage = (event) => {
                                             type: "web_url",
                                             url: responses.commands[original].answers[checkLanguageCode(senderID)].link,
                                             title: responses.commands[original].answers[checkLanguageCode(senderID)].buttonText,
-                                            webview_height_ratio: "compact"
+                                            webview_height_ratio: WEBVIEW_HEIGH_RATIO
+
                                         }
                                     ]
                                 }
                             }
                         };
                         senderAction(senderID, response, event);
+                    } else if (original == "family") {
+                        response = {
+                            attachment: {
+                                type: "template",
+                                payload: {
+                                    template_type: "button",
+                                    text: responses.commands[original].answers[checkLanguageCode(senderID)].message,
+                                    buttons: [
+                                        {
+                                            type: "web_url",
+                                            url: responses.commands[original].answers[checkLanguageCode(senderID)].link,
+                                            title: responses.commands[original].answers[checkLanguageCode(senderID)].buttonText,
+                                            webview_height_ratio: WEBVIEW_HEIGH_RATIO
+                                        }
+                                    ]
+                                }
+                            }
+                        };
                     } else if (original == "change language") {
                         response = {
                             text: responses.commands[original].answers[checkLanguageCode(senderID)].message,
@@ -62,7 +79,7 @@ export const processMessage = (event) => {
                             })
                         };
                         senderAction(senderID, response, event);
-                    } else if (original == "lang") {
+                    } else if (original == "language") {
                         response = {
                             text: checkLanguage(senderID)
                         }

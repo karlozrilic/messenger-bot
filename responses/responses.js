@@ -33,56 +33,12 @@ export default
         }
     },
     "commands": {
-        "lang": {
+        "language": {
             "descriptions": {
                 "en": "Check current language",
                 "es": "Consultar idioma actual",
                 "de": "Überprüfen Sie die aktuelle Sprache",
                 "fr": "Vérifier la langue actuelle"
-            }
-        },
-        "hi": {
-            "descriptions": {
-                "en": "hello in en",
-                "es": "hello in es",
-                "de": "hello in de",
-                "fr": "hello in fr"
-            },
-            "answers": {
-                "en": "Hello",
-                "es": "Hola",
-                "de": "Hallo",
-                "fr": "Bonjour"
-            }
-        },
-        "visa": {
-            "descriptions": {
-                "en": "Find out Visa information",
-                "es": "Descubra la información de Visa",
-                "de": "Informieren Sie sich über Visa-Informationen",
-                "fr": "Découvrez les informations sur les visas"
-            },
-            "answers": {
-                "en": {
-                    "message": "For Visa informations check more here:",
-                    "buttonText": "Here",
-                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
-                }, 
-                "es": {
-                    "message": "Para obtener información sobre Visa, consulte más aquí:",
-                    "buttonText": "Aquí",
-                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
-                },
-                "de": {
-                    "message": "Weitere Informationen zu Visa finden Sie hier",
-                    "buttonText": "Hier",
-                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
-                },
-                "fr": {
-                    "message": "Pour plus d'informations sur les visas, cliquez ici:",
-                    "buttonText": "Ici",
-                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
-                }
             }
         },
         "change language": {
@@ -126,6 +82,66 @@ export default
                 },
                 "fr": {
                     "message": "Choisissez une langue:"
+                }
+            }
+        },
+        "visa": {
+            "descriptions": {
+                "en": "Find out Visa information",
+                "es": "Descubra la información de Visa",
+                "de": "Informieren Sie sich über Visa-Informationen",
+                "fr": "Découvrez les informations sur les visas"
+            },
+            "answers": {
+                "en": {
+                    "message": "For Visa informations check here:",
+                    "buttonText": "Here",
+                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
+                }, 
+                "es": {
+                    "message": "Para obtener información sobre Visa, consulte aquí:",
+                    "buttonText": "Aquí",
+                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
+                },
+                "de": {
+                    "message": "Informationen zum Visum finden Sie hier:",
+                    "buttonText": "Hier",
+                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
+                },
+                "fr": {
+                    "message": "Pour les informations sur les visas, cliquez ici:",
+                    "buttonText": "Ici",
+                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
+                }
+            }
+        },
+        "family" : {
+            "descriptions": {
+                "en": "Find out Visa information",
+                "es": "Descubra la información de Visa",
+                "de": "Informieren Sie sich über Visa-Informationen",
+                "fr": "Découvrez les informations sur les visas"
+            },
+            "answers": {
+                "en": {
+                    "message": "For information on kindergartens and schools check here:",
+                    "buttonText": "Here",
+                    "link": "https://it-zavrsni-projekt.vercel.app/family"
+                }, 
+                "es": {
+                    "message": "Para obtener información sobre jardines de infancia y escuelas, haga clic aquí:",
+                    "buttonText": "Aquí",
+                    "link": "https://it-zavrsni-projekt.vercel.app/family"
+                },
+                "de": {
+                    "message": "Informationen zu Kindergärten und Schulen finden Sie hier:",
+                    "buttonText": "Hier",
+                    "link": "https://it-zavrsni-projekt.vercel.app/family"
+                },
+                "fr": {
+                    "message": "Pour plus d'informations sur les jardins d'enfants et les écoles, cliquez ici:",
+                    "buttonText": "Ici",
+                    "link": "https://it-zavrsni-projekt.vercel.app/family"
                 }
             }
         }
