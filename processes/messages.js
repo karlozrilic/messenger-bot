@@ -29,7 +29,7 @@ export const processMessage = (event) => {
                     };
                     senderAction(senderID, response, event);
                 } else {
-                    if (original === "visa") {
+                    if (original == "visa") {
                         response = {
                             attachment: {
                                 type: "template",
@@ -67,6 +67,7 @@ export const processMessage = (event) => {
                                 }
                             }
                         };
+                        senderAction(senderID, response, event);
                     } else if (original == "change language") {
                         response = {
                             text: responses.commands[original].answers[checkLanguageCode(senderID)].message,
