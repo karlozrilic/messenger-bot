@@ -117,10 +117,10 @@ export default
         },
         "family" : {
             "descriptions": {
-                "en": "Find out Visa information",
-                "es": "Descubra la información de Visa",
-                "de": "Informieren Sie sich über Visa-Informationen",
-                "fr": "Découvrez les informations sur les visas"
+                "en": "Find out informations about kindergartens and schools",
+                "es": "Obtenga información sobre jardines de infancia y escuelas",
+                "de": "Informieren Sie sich über Kindergärten und Schulen",
+                "fr": "Découvrez des informations sur les jardins d'enfants et les écoles"
             },
             "answers": {
                 "en": {
