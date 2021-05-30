@@ -42,7 +42,6 @@ export const processMessage = (event) => {
                                             url: responses.commands[original].answers[checkLanguageCode(senderID)].link,
                                             title: responses.commands[original].answers[checkLanguageCode(senderID)].buttonText,
                                             webview_height_ratio: WEBVIEW_HEIGH_RATIO
-
                                         }
                                     ]
                                 }
