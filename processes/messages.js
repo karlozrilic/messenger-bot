@@ -29,7 +29,7 @@ export const processMessage = (event) => {
                     };
                     senderAction(senderID, response, event);
                 } else {
-                    if (original == "visa") {
+                    if (original == "visa" || original == "family" || original == "life" || original == "events", original == "culture") {
                         response = {
                             attachment: {
                                 type: "template",
@@ -43,25 +43,6 @@ export const processMessage = (event) => {
                                             title: responses.commands[original].answers[checkLanguageCode(senderID)].buttonText,
                                             webview_height_ratio: WEBVIEW_HEIGH_RATIO
 
-                                        }
-                                    ]
-                                }
-                            }
-                        };
-                        senderAction(senderID, response, event);
-                    } else if (original == "family") {
-                        response = {
-                            attachment: {
-                                type: "template",
-                                payload: {
-                                    template_type: "button",
-                                    text: responses.commands[original].answers[checkLanguageCode(senderID)].message,
-                                    buttons: [
-                                        {
-                                            type: "web_url",
-                                            url: responses.commands[original].answers[checkLanguageCode(senderID)].link,
-                                            title: responses.commands[original].answers[checkLanguageCode(senderID)].buttonText,
-                                            webview_height_ratio: WEBVIEW_HEIGH_RATIO
                                         }
                                     ]
                                 }

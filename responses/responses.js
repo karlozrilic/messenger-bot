@@ -144,6 +144,96 @@ export default
                     "link": "https://it-zavrsni-projekt.vercel.app/family"
                 }
             }
+        },
+        "life" : {
+            "descriptions": {
+                "en": "Find out information on where to live and why",
+                "es": "Obtenga información sobre dónde vivir y por qué",
+                "de": "Finden Sie heraus, wo Sie wohnen und warum",
+                "fr": "Découvrez où vivre et pourquoi"
+            },
+            "answers": {
+                "en": {
+                    "message": "For more informations check here:",
+                    "buttonText": "Here",
+                    "link": "https://it-zavrsni-projekt.vercel.app/where-to-live"
+                }, 
+                "es": {
+                    "message": "Para obtener más información, consulte aquí:",
+                    "buttonText": "Aquí",
+                    "link": "https://it-zavrsni-projekt.vercel.app/where-to-live"
+                },
+                "de": {
+                    "message": "Weitere Informationen finden Sie hier:",
+                    "buttonText": "Hier",
+                    "link": "https://it-zavrsni-projekt.vercel.app/where-to-live"
+                },
+                "fr": {
+                    "message": "Pour plus d'informations voir ici:",
+                    "buttonText": "Ici",
+                    "link": "https://it-zavrsni-projekt.vercel.app/where-to-live"
+                }
+            }
+        },
+        "events" : {
+            "descriptions": {
+                "en": "Find interesting events",
+                "es": "Encuentra eventos interesantes",
+                "de": "Finden Sie interessante Veranstaltungen",
+                "fr": "Trouvez des événements intéressants"
+            },
+            "answers": {
+                "en": {
+                    "message": "For more informations on events check here:",
+                    "buttonText": "Here",
+                    "link": "https://it-zavrsni-projekt.vercel.app/events"
+                }, 
+                "es": {
+                    "message": "Para obtener más información sobre eventos, consulte aquí:",
+                    "buttonText": "Aquí",
+                    "link": "https://it-zavrsni-projekt.vercel.app/events"
+                },
+                "de": {
+                    "message": "Weitere Informationen zu Veranstaltungen finden Sie hier:",
+                    "buttonText": "Hier",
+                    "link": "https://it-zavrsni-projekt.vercel.app/events"
+                },
+                "fr": {
+                    "message": "Pour plus d'informations sur les événements, cliquez ici:",
+                    "buttonText": "Ici",
+                    "link": "https://it-zavrsni-projekt.vercel.app/events"
+                }
+            }
+        },
+        "culture" : {
+            "descriptions": {
+                "en": "Find out more about sightseeing locations",
+                "es": "Obtenga más información sobre lugares turísticos",
+                "de": "Erfahren Sie mehr über Sehenswürdigkeiten",
+                "fr": "En savoir plus sur les sites touristiques"
+            },
+            "answers": {
+                "en": {
+                    "message": "For more informations about sightseeing locations check here:",
+                    "buttonText": "Here",
+                    "link": "https://it-zavrsni-projekt.vercel.app/meet-the-city"
+                }, 
+                "es": {
+                    "message": "Para obtener más información sobre lugares turísticos, consulte aquí:",
+                    "buttonText": "Aquí",
+                    "link": "https://it-zavrsni-projekt.vercel.app/meet-the-city"
+                },
+                "de": {
+                    "message": "Weitere Informationen zu Sehenswürdigkeiten finden Sie hier:",
+                    "buttonText": "Hier",
+                    "link": "https://it-zavrsni-projekt.vercel.app/meet-the-city"
+                },
+                "fr": {
+                    "message": "Pour plus d'informations sur les sites touristiques, cliquez ici:",
+                    "buttonText": "Ici",
+                    "link": "https://it-zavrsni-projekt.vercel.app/meet-the-city"
+                }
+            }
         }
     }
 }
