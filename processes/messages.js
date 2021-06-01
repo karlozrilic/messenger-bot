@@ -29,7 +29,7 @@ export const processMessage = (event) => {
                     };
                     senderAction(senderID, response, event);
                 } else {
-                    if (original == "visa" || original == "family" || original == "life" || original == "events", original == "culture") {
+                    if (original == "visa" || original == "family" || original == "life" || original == "events" || original == "culture") {
                         response = {
                             attachment: {
                                 type: "template",
