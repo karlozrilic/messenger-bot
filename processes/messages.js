@@ -76,7 +76,7 @@ export const processMessage = (event) => {
             } else if (!Object.keys(responses.commands).includes(text) && flag) {
                 senderAction(senderID, {text: "Cant find description for that command!"}, event);
             } else {
-                senderAction(senderID, {text: "That command doesn't exist!"}, event);
+                senderAction(senderID, {text: "Sorry I didn't understand that!"}, event);
             }
 
             //senderAction(senderID, text, event);
