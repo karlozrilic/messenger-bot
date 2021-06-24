@@ -46,7 +46,8 @@ export const verifyWebhook = (app, chalk) => {
 	app.get('/webhook', function(req, res) {
 		if (req.query['hub.verify_token'] === process.env.VERIFY_TOKEN){
 			console.log('webhook verified');
-			res.status(200).send(req.query['hub.challenge']).send('Success');
+			res.send('Success');
+			res.status(200);
 		} else {
 			console.error('verification failed. Token mismatch.');
 			res.sendStatus(403);
