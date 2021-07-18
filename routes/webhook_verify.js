@@ -62,7 +62,6 @@ export const verifyWebhook = (app, chalk) => {
 			req.body.entry.forEach(function(entry) {
 			// Iterate over each messaging event
 				entry.messaging.forEach(function(event) {
-					console.log("HERE")
 					console.log(event)
 					if (event.postback){
 						processPostback(event);
