@@ -7,21 +7,6 @@ export const checkLanguage = (userID) => {
     let response;
     if (localStorage?.getItem(userID)) {
         response = responses.languages[localStorage.getItem(userID)].languageCheck + responses.languages[localStorage.getItem(userID)].languageName;
-        /*
-        switch (localStorage.getItem(userID)) {
-            case "de":
-                response = "Halloo [de]";
-                break;
-            case "es":
-                response = "Haaaa [es]";
-                break;
-            case "fr":
-                response = "Haaaa [fr]";
-                break;
-            default:
-                response = "Heloooo!"
-                break;
-        }*/
     } else {
         response = responses.languages.en.languageName;
     }
@@ -45,22 +30,6 @@ export const changeLanguage = (userID, langCode) => {
 
 const makeWelcomeResponse = (langCode) => {
     let response = responses.greetings[langCode][0];
-    /*
-    switch(langCode) {
-        case "de":
-            response = "Willkommen";
-            break;
-        case "es":
-            response = "La bienvenida";
-            break;
-        case "fr":
-            response = "Bienvenue";
-            break;
-        default:
-            response = "Welcome";
-            break;
-    }
-    */
     return response;
 };
 
