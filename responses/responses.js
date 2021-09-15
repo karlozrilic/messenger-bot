@@ -65,10 +65,10 @@ export default
                 }
             ],
             "descriptions": {
-                "en": "Find out Visa information",
-                "es": "Descubra la información de Visa",
-                "de": "Informieren Sie sich über Visa-Informationen",
-                "fr": "Découvrez les informations sur les visas"
+                "en": "Change current language",
+                "es": "Cambiar el idioma actual",
+                "de": "Aktuelle Sprache ändern",
+                "fr": "Changer la langue actuelle"
             },
             "answers": {
                 "en": {
