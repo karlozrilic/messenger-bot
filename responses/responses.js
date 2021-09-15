@@ -96,22 +96,22 @@ export default
                 "en": {
                     "message": "For Visa informations check here:",
                     "buttonText": "Here",
-                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
+                    "link": "/visa-informations"
                 }, 
                 "es": {
                     "message": "Para obtener información sobre Visa, consulte aquí:",
                     "buttonText": "Aquí",
-                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
+                    "link": "/visa-informations"
                 },
                 "de": {
                     "message": "Informationen zum Visum finden Sie hier:",
                     "buttonText": "Hier",
-                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
+                    "link": "/visa-informations"
                 },
                 "fr": {
                     "message": "Pour les informations sur les visas, cliquez ici:",
                     "buttonText": "Ici",
-                    "link": "https://it-zavrsni-projekt.vercel.app/visa-informations"
+                    "link": "/visa-informations"
                 }
             }
         },
@@ -126,22 +126,22 @@ export default
                 "en": {
                     "message": "For information on kindergartens and schools check here:",
                     "buttonText": "Here",
-                    "link": "https://it-zavrsni-projekt.vercel.app/family"
+                    "link": "/family"
                 }, 
                 "es": {
                     "message": "Para obtener información sobre jardines de infancia y escuelas, haga clic aquí:",
                     "buttonText": "Aquí",
-                    "link": "https://it-zavrsni-projekt.vercel.app/family"
+                    "link": "/family"
                 },
                 "de": {
                     "message": "Informationen zu Kindergärten und Schulen finden Sie hier:",
                     "buttonText": "Hier",
-                    "link": "https://it-zavrsni-projekt.vercel.app/family"
+                    "link": "/family"
                 },
                 "fr": {
                     "message": "Pour plus d'informations sur les jardins d'enfants et les écoles, cliquez ici:",
                     "buttonText": "Ici",
-                    "link": "https://it-zavrsni-projekt.vercel.app/family"
+                    "link": "/family"
                 }
             }
         },
@@ -156,22 +156,22 @@ export default
                 "en": {
                     "message": "For more informations check here:",
                     "buttonText": "Here",
-                    "link": "https://it-zavrsni-projekt.vercel.app/where-to-live"
+                    "link": "/where-to-live"
                 }, 
                 "es": {
                     "message": "Para obtener más información, consulte aquí:",
                     "buttonText": "Aquí",
-                    "link": "https://it-zavrsni-projekt.vercel.app/where-to-live"
+                    "link": "/where-to-live"
                 },
                 "de": {
                     "message": "Weitere Informationen finden Sie hier:",
                     "buttonText": "Hier",
-                    "link": "https://it-zavrsni-projekt.vercel.app/where-to-live"
+                    "link": "/where-to-live"
                 },
                 "fr": {
                     "message": "Pour plus d'informations voir ici:",
                     "buttonText": "Ici",
-                    "link": "https://it-zavrsni-projekt.vercel.app/where-to-live"
+                    "link": "/where-to-live"
                 }
             }
         },
@@ -186,22 +186,22 @@ export default
                 "en": {
                     "message": "For more informations on events check here:",
                     "buttonText": "Here",
-                    "link": "https://it-zavrsni-projekt.vercel.app/events"
+                    "link": "/events"
                 }, 
                 "es": {
                     "message": "Para obtener más información sobre eventos, consulte aquí:",
                     "buttonText": "Aquí",
-                    "link": "https://it-zavrsni-projekt.vercel.app/events"
+                    "link": "/events"
                 },
                 "de": {
                     "message": "Weitere Informationen zu Veranstaltungen finden Sie hier:",
                     "buttonText": "Hier",
-                    "link": "https://it-zavrsni-projekt.vercel.app/events"
+                    "link": "/events"
                 },
                 "fr": {
                     "message": "Pour plus d'informations sur les événements, cliquez ici:",
                     "buttonText": "Ici",
-                    "link": "https://it-zavrsni-projekt.vercel.app/events"
+                    "link": "/events"
                 }
             }
         },
@@ -216,22 +216,22 @@ export default
                 "en": {
                     "message": "For more informations about sightseeing locations check here:",
                     "buttonText": "Here",
-                    "link": "https://it-zavrsni-projekt.vercel.app/meet-the-city"
+                    "link": "/meet-the-city"
                 }, 
                 "es": {
                     "message": "Para obtener más información sobre lugares turísticos, consulte aquí:",
                     "buttonText": "Aquí",
-                    "link": "https://it-zavrsni-projekt.vercel.app/meet-the-city"
+                    "link": "/meet-the-city"
                 },
                 "de": {
                     "message": "Weitere Informationen zu Sehenswürdigkeiten finden Sie hier:",
                     "buttonText": "Hier",
-                    "link": "https://it-zavrsni-projekt.vercel.app/meet-the-city"
+                    "link": "/meet-the-city"
                 },
                 "fr": {
                     "message": "Pour plus d'informations sur les sites touristiques, cliquez ici:",
                     "buttonText": "Ici",
-                    "link": "https://it-zavrsni-projekt.vercel.app/meet-the-city"
+                    "link": "/meet-the-city"
                 }
             }
         }
