@@ -39,7 +39,7 @@ export const processMessage = (event) => {
                                     buttons: [
                                         {
                                             type: "web_url",
-                                            url: process.env.BASE_URL + responses.commands[original].answers[checkLanguageCode(senderID)].link,
+                                            url: responses.commands[original].answers[checkLanguageCode(senderID)].link,
                                             title: responses.commands[original].answers[checkLanguageCode(senderID)].buttonText,
                                             webview_height_ratio: WEBVIEW_HEIGH_RATIO
                                         }
