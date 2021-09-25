@@ -1,5 +1,17 @@
 export default
 {
+    "no_description": {
+        "en": "Can't find description for that command!",
+        "es": "¡No puedo encontrar la descripción de ese comando!",
+        "de": "Beschreibung für diesen Befehl nicht gefunden!",
+        "fr": "Impossible de trouver la description de cette commande !"
+    },
+    "no_command": {
+        "en": "Sorry I didn't understand that!",
+        "es": "¡Lo siento, no entendí eso!",
+        "de": "Das habe ich leider nicht verstanden!",
+        "fr": "Désolé je n'ai pas compris ça !"
+    },
     "greetings": {
         "en": {
             "messages": ["Hello $. Welcome to Digital nomads - Zadar. Hope you are doing good today.", "I am here to help you :-)", "Please type in one of the following commands: $\n\nIf you wish to see description of each command type \" -d\" after."]

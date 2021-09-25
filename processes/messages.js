@@ -74,9 +74,9 @@ export const processMessage = (event) => {
                     }
                 }
             } else if (!Object.keys(responses.commands).includes(text) && flag) {
-                senderAction(senderID, {text: "Cant find description for that command!"}, event);
+                senderAction(senderID, {text: responses.no_description[checkLanguageCode(senderID)]}, event);
             } else {
-                senderAction(senderID, {text: "Sorry I didn't understand that!"}, event);
+                senderAction(senderID, {text: responses.no_command[checkLanguageCode(senderID)]}, event);
             }
 
             //senderAction(senderID, text, event);
